@@ -1,0 +1,22 @@
+# requirements.txt
+# Dépendances pour le système d'automatisation TLDR avec Ollama
+# Installation: pip install -r requirements.txt
+
+# === CORE DEPENDENCIES ===
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# === AI LOCAL (OLLAMA) ===
+ollama>=0.1.7
+
+# === NOTION INTEGRATION ===
+notion-client>=2.2.1
+
+# === TEXT-TO-SPEECH ===
+pyttsx3>=2.90
+
+# === UTILITIES ===
+python-dateutil>=2.8.2
+pathlib>=1.0.1
+
