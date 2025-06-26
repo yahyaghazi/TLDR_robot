@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from typing import List, Dict, Any
 import logging
 
@@ -9,12 +9,79 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-class TLDRScraper:
-    """Niveau 1 - Découverte: Extraction des articles TLDR Tech optimisée"""
+class SmartDateHandler:
+    """Gestionnaire intelligent de dates pour éviter weekends et jours fériés"""
     
-    def __init__(self, newsletter_type="tech"):
+    def __init__(self, country_code: str = "US", max_days_back: int = 14):
+        self.country_code = country_code
+        self.max_days_back = max_days_back
+        self.holidays_cache = {}
+        self.base_url = "https://date.nager.at/api/v3"
+        
+    def get_holidays_for_year(self, year: int) -> List[str]:
+        """Récupère les jours fériés pour une année donnée"""
+        if year in self.holidays_cache:
+            return self.holidays_cache[year]
+        
+        try:
+            url = f"{self.base_url}/publicholidays/{year}/{self.country_code}"
+            response = requests.get(url, timeout=5)
+            response.raise_for_status()
+            
+            holidays_data = response.json()
+            holidays = [holiday['date'] for holiday in holidays_data]
+            self.holidays_cache[year] = holidays
+            
+            return holidays
+            
+        except Exception as e:
+            logger.warning(f"Erreur API jours fériés: {e}, utilisation fallback")
+            fallback_holidays = [
+                f"{year}-01-01", f"{year}-07-04", f"{year}-12-25", f"{year}-12-31"
+            ]
+            self.holidays_cache[year] = fallback_holidays
+            return fallback_holidays
+    
+    def is_business_day(self, target_date: date) -> bool:
+        """Vérifie si une date est un jour ouvrable"""
+        # Weekend check
+        if target_date.weekday() >= 5:
+            return False
+        
+        # Holiday check
+        holidays = self.get_holidays_for_year(target_date.year)
+        date_str = target_date.strftime("%Y-%m-%d")
+        return date_str not in holidays
+    
+    def get_last_business_day(self, from_date: date = None) -> date:
+        """Trouve le dernier jour ouvrable"""
+        if from_date is None:
+            from_date = date.today()
+        
+        # Si c'est aujourd'hui et avant midi, prendre hier
+        if from_date == date.today() and datetime.now().hour < 12:
+            from_date = from_date - timedelta(days=1)
+        
+        current_date = from_date
+        days_checked = 0
+        
+        while days_checked < self.max_days_back:
+            if self.is_business_day(current_date):
+                return current_date
+            current_date -= timedelta(days=1)
+            days_checked += 1
+        
+        return from_date  # Fallback
+
+
+class TLDRScraper:
+    """Niveau 1 - Découverte: Extraction des articles TLDR Tech optimisée avec dates intelligentes"""
+    
+    def __init__(self, newsletter_type="tech", max_articles=20, country_code="US"):
         self.newsletter_type = newsletter_type
         self.base_url = f"https://tldr.tech/{newsletter_type}"
+        self.max_articles = max_articles
+        self.date_handler = SmartDateHandler(country_code)  # NOUVEAU: Gestionnaire de dates
         
         # Headers optimisés pour TLDR
         self.headers = {
@@ -27,18 +94,50 @@ class TLDRScraper:
         }
         
     def get_todays_newsletter(self) -> str:
-        """Récupère l'URL de la newsletter du jour"""
-        today = date.today().strftime("%Y-%m-%d")
-        return f"{self.base_url}/{today}"
+        """Récupère l'URL de la newsletter du jour (jour ouvrable)"""
+        best_date = self.date_handler.get_last_business_day()
+        date_str = best_date.strftime("%Y-%m-%d")
+        logger.info(f"📅 Date optimale sélectionnée: {date_str}")
+        return f"{self.base_url}/{date_str}"
     
     def get_newsletter_by_date(self, target_date: str) -> str:
         """Récupère l'URL pour une date spécifique (format YYYY-MM-DD)"""
         return f"{self.base_url}/{target_date}"
     
+    def find_available_newsletter(self, max_attempts: int = 7) -> str:
+        """NOUVEAU: Trouve une newsletter disponible en testant plusieurs dates"""
+        current_date = date.today()
+        
+        for attempt in range(max_attempts):
+            # Obtenir le jour ouvrable
+            business_date = self.date_handler.get_last_business_day(current_date)
+            url = f"{self.base_url}/{business_date.strftime('%Y-%m-%d')}"
+            
+            # Test rapide de disponibilité
+            if self._test_url_availability(url):
+                logger.info(f"✅ Newsletter trouvée: {business_date}")
+                return url
+            
+            logger.info(f"⏭️ {business_date} non disponible, test jour précédent")
+            current_date = business_date - timedelta(days=1)
+        
+        # Fallback: retourner l'URL du jour
+        logger.warning("⚠️ Aucune newsletter récente trouvée, utilisation date du jour")
+        return self.get_todays_newsletter()
+    
+    def _test_url_availability(self, url: str) -> bool:
+        """Test rapide si une URL retourne du contenu"""
+        try:
+            response = requests.head(url, headers=self.headers, timeout=5)
+            return response.status_code == 200
+        except:
+            return False
+    
     def scrape_articles(self, url: str = None) -> List[Dict[str, Any]]:
-        """Extrait tous les articles de la newsletter TLDR"""
+        """Extrait tous les articles de la newsletter TLDR avec gestion intelligente des dates"""
         if not url:
-            url = self.get_todays_newsletter()
+            # NOUVEAU: Utiliser la recherche intelligente de newsletter
+            url = self.find_available_newsletter()
             
         try:
             logger.info(f"Scraping TLDR {self.newsletter_type}: {url}")
@@ -61,15 +160,66 @@ class TLDRScraper:
                     logger.info(f"Méthode réussie: {method.__name__}")
                     break
             
+            # Si aucune méthode ne marche et que l'URL était auto-détectée,
+            # essayer avec une date manuelle
+            if not articles and url == self.find_available_newsletter():
+                logger.warning("Aucun article trouvé avec date auto, test avec dates manuelles")
+                return self._try_fallback_dates()
+            
             # Filtrer et nettoyer les articles
             cleaned_articles = self._clean_and_validate_articles(articles)
+            
+            # Limitation du nombre d'articles
+            if len(cleaned_articles) > self.max_articles:
+                logger.info(f"Limitation de {len(cleaned_articles)} à {self.max_articles} articles")
+                cleaned_articles = cleaned_articles[:self.max_articles]
             
             logger.info(f"Extracted {len(cleaned_articles)} articles from {url}")
             return cleaned_articles
             
         except Exception as e:
             logger.error(f"Error scraping {url}: {e}")
+            
+            # NOUVEAU: Tentative avec dates alternatives en cas d'erreur réseau
+            if "Failed to resolve" in str(e) or "NameResolutionError" in str(e):
+                logger.info("Erreur DNS détectée, tentative avec dates alternatives...")
+                return self._try_fallback_dates()
+            
             return []
+    
+    def _try_fallback_dates(self) -> List[Dict[str, Any]]:
+        """NOUVEAU: Essaie plusieurs dates en cas d'échec"""
+        fallback_dates = [
+            "2025-06-24", "2025-06-21", "2025-06-20", 
+            "2025-06-19", "2025-06-18", "2025-06-17"
+        ]
+        
+        for date_str in fallback_dates:
+            try:
+                url = self.get_newsletter_by_date(date_str)
+                if self._test_url_availability(url):
+                    logger.info(f"✅ Date de fallback réussie: {date_str}")
+                    
+                    response = requests.get(url, headers=self.headers, timeout=15)
+                    response.raise_for_status()
+                    
+                    soup = BeautifulSoup(response.content, 'html.parser')
+                    
+                    # Essayer les méthodes de scraping
+                    for method in [self._scrape_method_structured, self._scrape_method_links]:
+                        articles = method(soup, url)
+                        if articles:
+                            cleaned = self._clean_and_validate_articles(articles)
+                            if len(cleaned) > self.max_articles:
+                                cleaned = cleaned[:self.max_articles]
+                            return cleaned
+                            
+            except Exception as e:
+                logger.warning(f"Fallback {date_str} échoué: {e}")
+                continue
+        
+        logger.error("❌ Toutes les dates de fallback ont échoué")
+        return []
     
     def _scrape_method_structured(self, soup, url: str) -> List[Dict[str, Any]]:
         """Méthode 1: Scraping basé sur la structure TLDR"""
@@ -95,6 +245,9 @@ class TLDRScraper:
                     article = self._extract_article_from_section(section, url)
                     if article:
                         articles.append(article)
+                        # NOUVEAU: Arrêt anticipé si limite atteinte
+                        if len(articles) >= self.max_articles * 2:  # Buffer pour le nettoyage
+                            break
                 
                 if articles:
                     break
@@ -102,18 +255,30 @@ class TLDRScraper:
         return articles
     
     def _scrape_method_links(self, soup, url: str) -> List[Dict[str, Any]]:
-        """Méthode 2: Extraction basée sur les liens externes"""
+        """Méthode 2: Extraction basée sur les liens externes (AMÉLIORÉE)"""
         articles = []
         
         # Recherche de tous les liens externes
         external_links = soup.find_all('a', href=re.compile(r'^https?://(?!tldr\.tech)'))
         
+        # NOUVEAU: Filtrage plus strict des liens
+        filtered_links = []
         for link in external_links:
-            # Éviter les liens de navigation/footer
             if self._is_article_link(link):
-                article = self._extract_article_from_link(link, url)
-                if article:
-                    articles.append(article)
+                filtered_links.append(link)
+                # Limite précoce pour éviter trop de liens
+                if len(filtered_links) >= self.max_articles * 3:
+                    break
+        
+        logger.info(f"Filtered to {len(filtered_links)} potential article links")
+        
+        for link in filtered_links:
+            article = self._extract_article_from_link(link, url)
+            if article:
+                articles.append(article)
+                # NOUVEAU: Arrêt anticipé
+                if len(articles) >= self.max_articles * 2:
+                    break
         
         return articles
     
@@ -131,12 +296,66 @@ class TLDRScraper:
         
         for pattern in patterns:
             matches = re.finditer(pattern, text_content, re.MULTILINE)
+            count = 0
             for match in matches:
+                if count >= self.max_articles:  # NOUVEAU: Limite par pattern
+                    break
                 article = self._create_article_from_match(match, url)
                 if article:
                     articles.append(article)
+                    count += 1
         
         return articles
+    
+    def _is_article_link(self, link) -> bool:
+        """Vérifie si un lien pointe vers un article (AMÉLIORATION)"""
+        href = link.get('href', '')
+        text = link.get_text(strip=True)
+        
+        # NOUVEAU: Exclusions plus strictes
+        exclusions = [
+            'unsubscribe', 'subscribe', 'footer', 'header',
+            'privacy', 'terms', 'about', 'contact', 'sponsor',
+            'advertise', 'jobs', 'careers', 'support',
+            'twitter.com', 'linkedin.com', 'facebook.com',
+            'instagram.com', 'youtube.com', 'tiktok.com',
+            'tldr.tech/unsubscribe', 'tldr.tech/jobs',
+            'tldr.tech/sponsor', 'tldr.tech/advertise',
+            'mailto:', 'tel:', 'javascript:',
+            # Exclusions spécifiques TLDR
+            'tldr.tech/marketing', 'tldr.tech/ai', 'tldr.tech/crypto',
+            '/unsubscribe', '/subscribe', '/privacy'
+        ]
+        
+        # Vérification stricte des exclusions
+        href_lower = href.lower()
+        text_lower = text.lower()
+        
+        for exclusion in exclusions:
+            if exclusion in href_lower or exclusion in text_lower:
+                return False
+        
+        # NOUVEAU: Critères positifs plus stricts
+        # Le texte doit être assez long et descriptif
+        if len(text) < 15:
+            return False
+        
+        # NOUVEAU: Privilégier les domaines tech reconnus
+        quality_domains = [
+            'github.com', 'medium.com', 'dev.to', 'stackoverflow.com',
+            'techcrunch.com', 'theverge.com', 'arstechnica.com', 'wired.com',
+            'engadget.com', 'venturebeat.com', 'hackernews', 'reddit.com',
+            'blog.', 'docs.', 'research.', 'paper', 'arxiv.org',
+            'news.', 'press.', 'announce'
+        ]
+        
+        # Si c'est un domaine de qualité, on accepte plus facilement
+        for domain in quality_domains:
+            if domain in href_lower:
+                return len(text) > 10
+        
+        # Sinon, critères plus stricts
+        return len(text) > 25 and href.startswith('http') and '.' in href
     
     def _extract_article_from_section(self, section, base_url: str) -> Dict[str, Any]:
         """Extrait un article d'une section HTML"""
@@ -237,33 +456,6 @@ class TLDRScraper:
         
         return None
     
-    def _is_article_link(self, link) -> bool:
-        """Vérifie si un lien pointe vers un article"""
-        href = link.get('href', '')
-        text = link.get_text(strip=True)
-        
-        # Exclusions
-        exclusions = [
-            'unsubscribe', 'subscribe', 'footer', 'header',
-            'privacy', 'terms', 'about', 'contact', 'sponsor',
-            'twitter.com', 'linkedin.com', 'facebook.com',
-            'tldr.tech/unsubscribe', 'tldr.tech/jobs'
-        ]
-        
-        for exclusion in exclusions:
-            if exclusion in href.lower() or exclusion in text.lower():
-                return False
-        
-        # Critères positifs
-        if len(text) > 20 and any(domain in href for domain in [
-            'github.com', 'medium.com', 'dev.to', 'hackernews',
-            'techcrunch.com', 'wired.com', 'arstechnica.com',
-            'theverge.com', 'engadget.com'
-        ]):
-            return True
-            
-        return len(text) > 15 and href.startswith('http')
-    
     def _extract_summary_from_section(self, section, title: str) -> str:
         """Extrait le résumé d'une section"""
         text = section.get_text(strip=True)
@@ -355,23 +547,35 @@ class TLDRScraper:
             return None
     
     def _clean_and_validate_articles(self, articles: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Nettoie et valide la liste d'articles"""
+        """Nettoie et valide la liste d'articles (AMÉLIORATION)"""
         cleaned = []
         seen_titles = set()
+        seen_urls = set()
         
         for article in articles:
             title = article.get('titre', '').strip()
+            url = article.get('url', '').strip()
             
-            # Validation
-            if (len(title) < 10 or 
+            # NOUVEAU: Validation plus stricte
+            if (len(title) < 15 or  # Titre plus long requis
                 title.lower() in seen_titles or
+                (url and url in seen_urls) or
                 any(skip in title.lower() for skip in [
                     'subscribe', 'unsubscribe', 'privacy policy', 
-                    'terms of service', 'contact us'
+                    'terms of service', 'contact us', 'sponsor',
+                    'advertise', 'newsletter', 'tldr', 'sign up'
                 ])):
                 continue
             
+            # NOUVEAU: Privilégier les articles avec URL
+            if url:
+                seen_urls.add(url)
+            
             seen_titles.add(title.lower())
             cleaned.append(article)
+            
+            # NOUVEAU: Arrêt si limite atteinte
+            if len(cleaned) >= self.max_articles:
+                break
         
         return cleaned

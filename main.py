@@ -1,5 +1,6 @@
 import logging
 import ollama
+from datetime import date
 
 from tdlrscraper import TLDRScraper
 from tdlrautomationsystem import TLDRAutomationSystem
@@ -8,34 +9,93 @@ from tdlrautomationsystem import TLDRAutomationSystem
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+def test_smart_date_system():
+    """Test du système de dates intelligent"""
+    print("🧪 Test du système de dates intelligent")
+    print("=" * 60)
+    
+    from tdlrscraper import SmartDateHandler
+    
+    # Test avec différents pays
+    countries = {"US": "États-Unis", "FR": "France", "DE": "Allemagne", "GB": "Royaume-Uni"}
+    
+    for code, name in countries.items():
+        print(f"\n🌍 {name} ({code}):")
+        handler = SmartDateHandler(code)
+        
+        # Obtenir la meilleure date
+        best_date = handler.get_last_business_day()
+        print(f"  🎯 Meilleure date: {best_date} ({best_date.strftime('%A')})")
+        
+        # Analyser les derniers jours
+        from datetime import timedelta
+        for i in range(5):
+            test_date = best_date - timedelta(days=i)
+            is_business = handler.is_business_day(test_date)
+            status = "✅" if is_business else "❌"
+            day_name = test_date.strftime("%A")
+            print(f"  {status} {test_date} ({day_name})")
 
+def test_tldr_tech_scraping_smart():
+    """Test spécifique pour TLDR Tech avec dates intelligentes"""
+    print("\n🧪 Test du scraping TLDR Tech intelligent")
+    print("=" * 60)
+    
+    # NOUVEAU: Scraper avec gestion intelligente des dates
+    scraper = TLDRScraper('tech', max_articles=15, country_code='US')
+    
+    print("🔍 Recherche automatique de la meilleure newsletter...")
+    
+    # Test de recherche intelligente
+    best_url = scraper.find_available_newsletter()
+    print(f"📰 URL optimale: {best_url}")
+    
+    # Test de scraping
+    print(f"\n📥 Scraping en cours...")
+    articles = scraper.scrape_articles()
+    
+    print(f"✅ Articles trouvés: {len(articles)}")
+    
+    if articles:
+        print(f"\n📋 Aperçu des articles:")
+        for i, article in enumerate(articles[:5], 1):
+            print(f"  {i}. {article['titre'][:70]}...")
+            if article['url']:
+                print(f"     🔗 {article['url'][:60]}...")
+            if article['resume_tldr']:
+                print(f"     📝 {article['resume_tldr'][:80]}...")
+            print()
+    else:
+        print("❌ Aucun article trouvé")
 
-# Configuration et utilisation avec TLDR Tech
 def main():
+    """Configuration et utilisation avec TLDR Tech et dates intelligentes"""
+    print("🚀 Lancement du système TLDR automatisé")
+    print("=" * 60)
+    
     # Configuration optimisée pour TLDR Tech
     config = {
-        'newsletter_type': 'tech',  # Changé de 'marketing' à 'tech'
+        'newsletter_type': 'tech',
         'notion_token': 'YOUR_NOTION_TOKEN',
         'notion_database_id': 'YOUR_DATABASE_ID',
         'ollama_model': 'nous-hermes2:latest',
         'ollama_base_url': 'http://localhost:11434',
-        'audio_output_dir': './audio_summaries'
+        'audio_output_dir': './audio_summaries',
+        'country_code': 'US'  # NOUVEAU: Code pays pour jours fériés
     }
     
     # Initialisation du système
     automation = TLDRAutomationSystem(config)
     
-    # Test avec une date spécifique (exemple)
-    # scraper = TLDRScraper('tech')
-    # articles = scraper.scrape_articles('https://tldr.tech/tech/2025-06-25')
-    
-    # Lancement de l'automatisation pour aujourd'hui
+    # Lancement de l'automatisation intelligente
+    print("📰 Recherche de la newsletter la plus récente...")
     results = automation.run_daily_automation()
     
     # Sauvegarde des résultats
     automation.save_results(results)
     
     # Affichage des résultats
+    print(f"\n📊 RÉSULTATS:")
     print(f"🔍 Articles TLDR Tech extraits: {results['articles_extracted']}")
     print(f"💾 Articles stockés dans Notion: {results['articles_stored']}")
     print(f"📝 Synthèse générée: {len(results['synthesis'])} caractères")
@@ -43,149 +103,148 @@ def main():
     
     if results['errors']:
         print(f"❌ Erreurs: {results['errors']}")
+    else:
+        print("✅ Automatisation réussie!")
     
     # Affichage d'un extrait de la synthèse
     if results['synthesis']:
         print(f"\n📊 Aperçu de la synthèse TLDR Tech:")
-        print(results['synthesis'][:300] + "...")
+        print("-" * 50)
+        print(results['synthesis'][:400] + "...")
+        print("-" * 50)
 
-
-def test_tldr_tech_scraping():
-    """Test spécifique pour TLDR Tech"""
-    print("🧪 Test du scraping TLDR Tech")
+def test_holidays_api():
+    """Test de l'API des jours fériés"""
+    print("\n🧪 Test de l'API Nager.Date (jours fériés)")
+    print("=" * 60)
     
-    scraper = TLDRScraper('tech')
+    from tdlrscraper import SmartDateHandler
+    import requests
     
-    # Test avec différentes URLs
-    test_urls = [
-        'https://tldr.tech/tech/2025-06-25',
-        scraper.get_todays_newsletter(),
-        scraper.get_newsletter_by_date('2025-06-24')
-    ]
+    # Test direct de l'API
+    countries_to_test = ['US', 'FR', 'DE', 'GB', 'CA']
+    year = 2025
     
-    for url in test_urls:
-        print(f"\n📰 Test: {url}")
-        articles = scraper.scrape_articles(url)
-        print(f"✅ Articles trouvés: {len(articles)}")
-        
-        if articles:
-            for i, article in enumerate(articles[:3], 1):
-                print(f"  {i}. {article['titre'][:60]}...")
-                if article['url']:
-                    print(f"     🔗 {article['url'][:50]}...")
-                if article['resume_tldr']:
-                    print(f"     📝 {article['resume_tldr'][:80]}...")
-                print()
+    for country in countries_to_test:
+        print(f"\n🌍 Test {country}:")
+        try:
+            url = f"https://date.nager.at/api/v3/publicholidays/{year}/{country}"
+            response = requests.get(url, timeout=5)
+            
+            if response.status_code == 200:
+                holidays = response.json()
+                print(f"  ✅ {len(holidays)} jours fériés trouvés")
+                
+                # Afficher les 3 premiers
+                for holiday in holidays[:3]:
+                    print(f"    📅 {holiday['date']}: {holiday['name']}")
+            else:
+                print(f"  ❌ Erreur HTTP {response.status_code}")
+                
+        except Exception as e:
+            print(f"  ❌ Erreur: {e}")
+    
+    # Test avec le gestionnaire intelligent
+    print(f"\n🧠 Test avec gestionnaire intelligent:")
+    handler = SmartDateHandler('US')
+    
+    from datetime import date, timedelta
+    today = date.today()
+    
+    for i in range(10):
+        test_date = today - timedelta(days=i)
+        is_business = handler.is_business_day(test_date)
+        status = "✅ Business" if is_business else "❌ Non-business"
+        print(f"  {test_date} ({test_date.strftime('%A')}): {status}")
 
-
-def test_all_newsletters():
-    """Test de tous les types de newsletters TLDR"""
+def test_all_newsletters_smart():
+    """Test de tous les types de newsletters TLDR avec dates intelligentes"""
+    print("\n🧪 Test de toutes les newsletters TLDR")
+    print("=" * 60)
+    
     newsletters = ['tech', 'ai', 'crypto', 'marketing', 'design', 'webdev']
     
     for newsletter in newsletters:
-        print(f"\n🧪 Test TLDR {newsletter.upper()}:")
+        print(f"\n📰 TLDR {newsletter.upper()}:")
         try:
-            scraper = TLDRScraper(newsletter)
-            url = scraper.get_todays_newsletter()
-            articles = scraper.scrape_articles(url)
-            print(f"✅ {newsletter}: {len(articles)} articles")
+            scraper = TLDRScraper(newsletter, max_articles=10, country_code='US')
+            
+            # Recherche intelligente
+            best_url = scraper.find_available_newsletter()
+            print(f"  🎯 URL: {best_url}")
+            
+            # Test rapide
+            if scraper._test_url_availability(best_url):
+                print(f"  ✅ Contenu disponible")
+                # Articles = scraper.scrape_articles()
+                # print(f"  📊 {len(articles)} articles trouvés")
+            else:
+                print(f"  ❌ Contenu indisponible")
+                
         except Exception as e:
-            print(f"❌ {newsletter}: {e}")
+            print(f"  ❌ Erreur: {e}")
 
+def diagnostic_complet():
+    """Diagnostic complet du système"""
+    print("🔧 DIAGNOSTIC COMPLET DU SYSTÈME")
+    print("=" * 60)
+    
+    # 1. Test Ollama
+    print("\n1️⃣ Test Ollama:")
+    try:
+        import ollama
+        response = ollama.chat(
+            model='nous-hermes2:latest',
+            messages=[{'role': 'user', 'content': 'Hello, respond with "OK"'}],
+            options={'num_predict': 10}
+        )
+        print("  ✅ Ollama fonctionne")
+        print(f"  📝 Réponse: {response['message']['content']}")
+    except Exception as e:
+        print(f"  ❌ Ollama erreur: {e}")
+    
+    # 2. Test API jours fériés
+    print("\n2️⃣ Test API Nager.Date:")
+    test_holidays_api()
+    
+    # 3. Test dates intelligentes
+    print("\n3️⃣ Test système de dates:")
+    test_smart_date_system()
+    
+    # 4. Test scraping
+    print("\n4️⃣ Test scraping intelligent:")
+    test_tldr_tech_scraping_smart()
+    
+    print(f"\n🎉 Diagnostic terminé!")
 
 if __name__ == "__main__":
-    # Test spécifique TLDR Tech
-    test_tldr_tech_scraping()
+    # Choix du test à exécuter
+    import sys
     
-    # Ou lancer l'automatisation complète
-    # main()
+    if len(sys.argv) > 1:
+        mode = sys.argv[1].lower()
+    else:
+        mode = "smart"  # Mode par défaut
     
-    # Ou tester toutes les newsletters
-    # test_all_newsletters()
+    if mode == "diagnostic":
+        diagnostic_complet()
+    elif mode == "dates":
+        test_smart_date_system()
+    elif mode == "holidays":
+        test_holidays_api()
+    elif mode == "all":
+        test_all_newsletters_smart()
+    elif mode == "automation":
+        main()  # Automatisation complète
+    else:
+        # Mode par défaut: test intelligent
+        test_smart_date_system()
+        test_tldr_tech_scraping_smart()
 
-
-def test_ollama_models():
-    """Fonction utilitaire pour tester différents modèles Ollama"""
-    models_to_test = [
-        'nous-hermes2:latest',
-        'llama2:latest', 
-        'mistral:latest',
-        'codellama:latest',
-        'phi:latest'
-    ]
-    
-    for model in models_to_test:
-        print(f"\n🧪 Test du modèle: {model}")
-        try:
-            response = ollama.chat(
-                model=model,
-                messages=[{
-                    'role': 'user',
-                    'content': 'Réponds en français: Catégorise cet article en 2 mots: "Introduction to Machine Learning for beginners"'
-                }],
-                options={'num_predict': 20}
-            )
-            print(f"✅ {model}: {response['message']['content']}")
-        except Exception as e:
-            print(f"❌ {model}: {e}")
-
-
-if __name__ == "__main__":
-    # Tester d'abord les modèles disponibles (optionnel)
-    # test_ollama_models()
-    
-    # Lancer l'automatisation principale
-    main()
-
-
-# INSTRUCTIONS D'INSTALLATION OLLAMA UNIQUEMENT
-"""
-🚀 SETUP OLLAMA (LLM LOCAL UNIQUEMENT)
-
-1. Installation d'Ollama:
-   - Linux/Mac: curl -fsSL https://ollama.ai/install.sh | sh
-   - Windows: Télécharger depuis https://ollama.ai/download
-   
-2. Démarrer Ollama:
-   ollama serve
-
-3. Installer le modèle recommandé:
-   ollama pull nous-hermes2:latest
-   
-   Autres modèles performants:
-   ollama pull mistral:latest      # Plus rapide, bon pour la catégorisation
-   ollama pull llama2:latest       # Modèle de référence
-   ollama pull phi:latest          # Très compact et rapide
-
-4. Installation des dépendances Python (SIMPLICITÉ):
-   pip install requests beautifulsoup4 ollama notion-client pyttsx3
-
-5. Configuration ultra-simple:
-   config = {
-       'newsletter_type': 'marketing',
-       'notion_token': 'YOUR_NOTION_TOKEN',
-       'notion_database_id': 'YOUR_DATABASE_ID',
-       'ollama_model': 'nous-hermes2:latest'
-   }
-
-AVANTAGES OLLAMA PUR:
-✅ 100% Gratuit et illimité
-✅ 100% Privé (tout en local)
-✅ Aucune dépendance Internet pour l'IA
-✅ Performance excellente
-✅ Plus simple : pas de choix de provider
-✅ Pas de clé API à gérer
-
-MODÈLES RECOMMANDÉS:
-- nous-hermes2:latest -> Le meilleur pour l'analyse (RECOMMANDÉ)
-- mistral:latest -> Plus rapide, excellent aussi
-- phi:latest -> Ultra compact pour machines limitées
-
-6. Test simple:
-   python -c "import ollama; print('Ollama OK')"
-
-7. Lancement:
-   python tldr_automation.py
-
-Plus simple, plus rapide, 100% gratuit !
-"""
+# Instructions d'utilisation:
+# python main.py              # Test intelligent par défaut
+# python main.py diagnostic   # Diagnostic complet
+# python main.py dates        # Test système de dates
+# python main.py holidays     # Test API jours fériés
+# python main.py all          # Test toutes newsletters
+# python main.py automation   # Lancement automatisation complète

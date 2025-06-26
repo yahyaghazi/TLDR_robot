@@ -1,10 +1,8 @@
 {
-  "date": "2025-06-26T10:19:48.577815",
-  "articles_extracted": 0,
+  "date": "2025-06-26T11:47:00.537349",
+  "articles_extracted": 14,
   "articles_stored": 0,
-  "synthesis": "",
-  "audio_file": null,
-  "errors": [
-    "No articles extracted"
-  ]
+  "synthesis": "🔍 TENDANCES (2-3 points) :\n- Les centres de données géants et les progrès dans l'IA robotique sont des tendances importantes.\n- L'utilisation d'AI dans la création de logiciels de productivité et le développement de modèles visuels sont en pleine expansion.\n- Les discussions sur les questions juridiques et éthiques liées à l'IA continuent de se développer.\n\n📊 INSIGHTS (1 paragraphe) :\nLes tendances actuelles dans le secteur technologique montrent que l'utilisation d'IA est en plein essor, avec des progrès significatifs dans la conception de centres de données géants et des modèles visuels avancés. Cependant, ces progrès sont accompagnés de questions juridiques et éthiques importantes qui doivent être abordées pour assurer un développement responsable de l'IA dans l'avenir.\n\n💡 ACTIONS (2 recommandations) :\n- Les entreprises devraient se concentrer sur l'intégration de l'IA dans leurs opérations, en particulier dans les domaines des centres de données et du visionnement visuel.",
+  "audio_file": "audio_summaries\\veille_tldr_20250626.wav",
+  "errors": []
 }
