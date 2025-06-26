@@ -1,0 +1,189 @@
+{
+  "date": "2025-06-25",
+  "date_formatted": "2025-06-25",
+  "day_name": "Wednesday",
+  "articles_extracted": 14,
+  "articles_stored": 0,
+  "synthesis": "🔍 TENDANCES :\n\n1. Les centres de données géants d'Amazon et les innovations en vision par ordinateur dans le domaine des robots montrent l'importance croissante de l'IA/IA dans les technologies.\n2. L'utilisation de l'IA pour améliorer la productivité, comme OpenAI avec ChatGPT, est en pleine expansion.\n3. Les questions juridiques et éthiques liées à l'utilisation d'IA sont en train de se poser, notamment dans le cas Anthropic.\n\n📊 INSIGHTS :\n\nL'intelligence artificielle continue de jouer un rôle central dans les innovations technologiques du moment. Les entreprises et les chercheurs s'appuient sur l'IA pour améliorer la taille, la performance et l'efficacité des centres de données, ainsi que pour développer des outils de productivité et d'analyse avancés. Cependant, il est important de continuer à s'interroger sur les questions juridiques et éthiques liées à l'utilisation de l'IA, afin de garantir une utilisation responsable de cette technologie.\n\n💡 ACTIONS :\n\n1. Les",
+  "audio_file": "C:\\Users\\yahya\\TLDR_robot\\data\\audio_summaries\\tldr_tech_2025-06-25.wav",
+  "json_file": null,
+  "errors": [],
+  "processing_time": 0,
+  "success": false,
+  "articles": [
+    {
+      "titre": "At Amazons Biggest Data Center, Everything Is Supersized for AI",
+      "url": "https://www.nytimes.com/2025/06/24/technology/amazon-ai-data-centers.html?unlocked_article_code=1.Rk8.5sod.iW1YVG1JWA0r&smid=url-share&utm_source=tldrnewsletter",
+      "duree_lecture": "11 minute read",
+      "resume_tldr": "Amazon's Project Rainier involves building data centers so large they would have been considered absurd just a few years ago. The tech industry requires massive networks of specialized computer chips for its increasingly powerful AI technologies",
+      "contenu_brut": "At Amazon's Biggest Data Center, Everything Is Supersized for AI (11 minute read)Amazon's Project Rainier involves building data centers so large they would have been considered absurd just a few years ago. The tech industry requires massive networks of specialized computer chips for its increasingly powerful AI technologies. Over the next several years, Amazon plans to build around 30 data centers at a 1,200-acre stretch of farmland outside New Carlisle, Indiana. The entire complex, which will ",
+      "date_extraction": "2025-06-26T14:58:24.394285",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "OpenAI designs rival to Office and Workspace, The Information reports",
+      "url": "https://finance.yahoo.com/news/openai-designs-rival-office-workspace-163628447.html?utm_source=tldrnewsletter",
+      "duree_lecture": "2 minute read",
+      "resume_tldr": "OpenAI is developing productivity features for ChatGPT. It is working on collaborative document editing and integrated chat capabilities. The planned features will resemble functions offered by Microsoft Office 365 and Google Workspace",
+      "contenu_brut": "OpenAI designs rival to Office and Workspace, The Information reports (2 minute read)OpenAI is developing productivity features for ChatGPT. It is working on collaborative document editing and integrated chat capabilities. The planned features will resemble functions offered by Microsoft Office 365 and Google Workspace. No official product announcements or timelines have been made public.",
+      "date_extraction": "2025-06-26T14:58:24.394285",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Product",
+        "Design"
+      ]
+    },
+    {
+      "titre": "Googles new robotics AI can run without the cloud and still tie your shoes",
+      "url": "https://arstechnica.com/google/2025/06/google-releases-first-cloud-free-ai-robotics-model/?utm_source=tldrnewsletter",
+      "duree_lecture": "6 minute read",
+      "resume_tldr": "Google DeepMind has revealed a new on-device vision language action (VLA) model that can control robots. It doesn't have a cloud component, so robots using the model can operate with full autonomy",
+      "contenu_brut": "Google's new robotics AI can run without the cloud and still tie your shoes (6 minute read)Google DeepMind has revealed a new on-device vision language action (VLA) model that can control robots. It doesn't have a cloud component, so robots using the model can operate with full autonomy. This is the first version of Google's robotics model that developers can tune for their specific uses. Robotics researchers can adapt the VLA to new tasks with as little as 50 to 100 demonstrations.",
+      "date_extraction": "2025-06-26T14:58:24.395285",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Mobile",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Worlds largest camera shows galaxy in 3,200 megapixel glory as Rubin telescope goes online",
+      "url": "https://www.theregister.com/2025/06/24/vera_galaxy_camera/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "Rubin Observatory is finally online and photographing the galaxy. It found 2,104 new asteroids in the Solar System in its initial ten hours of operation",
+      "contenu_brut": "World's largest camera shows galaxy in 3,200 megapixel glory as Rubin telescope goes online (4 minute read)The Vera C. Rubin Observatory is finally online and photographing the galaxy. It found 2,104 new asteroids in the Solar System in its initial ten hours of operation. The telescope will allow scientists to explore the cosmos in new ways at a scale that will enable discoveries that should fundamentally change our understanding of the universe. The observatory is located on the El Peñón peak o",
+      "date_extraction": "2025-06-26T14:58:24.395285",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Data"
+      ]
+    },
+    {
+      "titre": "The road to Top 1: How XBOW did it",
+      "url": "https://xbow.com/blog/top-1-how-xbow-did-it/?utm_source=tldrnewsletter",
+      "duree_lecture": "7 minute read",
+      "resume_tldr": "An autonomous penetration tester has reached the top spot on HackerOne for the first time in bug bounty history. XBOW is a fully autonomous AI-driven penetration tester that operates much like a human pentester but can scale rapidly, completing comprehensive penetration tests in just a few hours",
+      "contenu_brut": "The road to Top 1: How XBOW did it (7 minute read)An autonomous penetration tester has reached the top spot on HackerOne for the first time in bug bounty history. XBOW is a fully autonomous AI-driven penetration tester that operates much like a human pentester but can scale rapidly, completing comprehensive penetration tests in just a few hours. It has reported thousands of vulnerabilities validated and confirmed by program owners. XBOW can identify a full spectrum of vulnerabilities, including ",
+      "date_extraction": "2025-06-26T14:58:24.395285",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Security",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Falsehoods programmers believe about time",
+      "url": "https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca?utm_source=tldrnewsletter",
+      "duree_lecture": "7 minute read",
+      "resume_tldr": "Developers who think they understand everything about time are probably doing something wrong. This post presents a list of falsehoods that programmers tend to believe about working with time",
+      "contenu_brut": "Falsehoods programmers believe about time (7 minute read)Developers who think they understand everything about time are probably doing something wrong. This post presents a list of falsehoods that programmers tend to believe about working with time. Don't try to re-invent a date-time library.",
+      "date_extraction": "2025-06-26T14:58:24.396285",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Dev",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Anthropic wins a major fair use victory for AI but its still in trouble for stealing books",
+      "url": "https://simonwillison.net/2025/Jun/24/anthropic-training/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "Anthropic used both downloaded ebooks and purchased and scanned print books to create the data it used to train its models. A judge found that the scanned books fell under fair use as they were transformative versions of the works and were not shared outside of the company",
+      "contenu_brut": "Anthropic wins a major fair use victory for AI — but it's still in trouble for stealing books (4 minute read)Anthropic used both downloaded ebooks and purchased and scanned print books to create the data it used to train its models. A judge found that the scanned books fell under fair use as they were transformative versions of the works and were not shared outside of the company. The downloaded ebooks did not count as fair use - these will be the subject of a forthcoming jury trial. The judge f",
+      "date_extraction": "2025-06-26T14:58:24.396285",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Legal",
+        "Business",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "ChatGPT Wows Office Workers. Thats a Problem for Microsoft",
+      "url": "https://www.bloomberg.com/news/articles/2025-06-24/chatgpt-vs-copilot-inside-the-openai-and-microsoft-rivalry?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc1MDgyNDc4NiwiZXhwIjoxNzUxNDI5NTg2LCJhcnRpY2xlSWQiOiJTWUNYOTJEV0xVNjgwMCIsImJjb25uZWN0SWQiOiJFQTExNDNDNTM4NEE0RUY5QTg5RjJEN0IxMTg2MzcwOSJ9.cHpNAsbZo1g5bbjEMedeTOyZv4UCDuWUwBOoPSU4duk&utm_source=tldrnewsletter",
+      "duree_lecture": "8 minute read",
+      "resume_tldr": "last spring announced plans to buy Microsoft's Copilot assistant for 20,000 employees, but 13 months later, Amgen employees are using OpenAI's ChatGPT. The company expanded its ChatGPT use earlier this year after hearing from employees that it helped with tasks such as research and summarizing scien...",
+      "contenu_brut": "ChatGPT Wows Office Workers. That's a Problem for Microsoft (8 minute read)Drug maker Amgen Inc. last spring announced plans to buy Microsoft's Copilot assistant for 20,000 employees, but 13 months later, Amgen employees are using OpenAI's ChatGPT. The company expanded its ChatGPT use earlier this year after hearing from employees that it helped with tasks such as research and summarizing scientific documents. Its push into the enterprise market is complicating its already fraught relationship w",
+      "date_extraction": "2025-06-26T14:58:24.396285",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Business",
+        "Web3",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "The résumé is dying, and AI is holding the smoking gun",
+      "url": "https://arstechnica.com/ai/2025/06/the-resume-is-dying-and-ai-is-holding-the-smoking-gun/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "The traditional hiring process has become overwhelmed with automated noise",
+      "contenu_brut": "The résumé is dying, and AI is holding the smoking gun (4 minute read)The traditional hiring process has become overwhelmed with automated noise.",
+      "date_extraction": "2025-06-26T14:58:24.397463",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "HR",
+        "Product",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Subsecond: Hot-patching for Rust",
+      "url": "https://docs.rs/subsecond/0.7.0-alpha.1/subsecond/index.html?utm_source=tldrnewsletter",
+      "duree_lecture": "8 minute read",
+      "resume_tldr": "Subsecond is a library that enables hot-patching for Rust applications, which allows developers to change the code of a running application without restarting it",
+      "contenu_brut": "Subsecond: Hot-patching for Rust (8 minute read)Subsecond is a library that enables hot-patching for Rust applications, which allows developers to change the code of a running application without restarting it.",
+      "date_extraction": "2025-06-26T14:58:24.397463",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Dev",
+        "AI/IA",
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Microsoft planning major Xbox layoffs next week",
+      "url": "https://www.theverge.com/microsoft-xbox/691967/microsoft-xbox-layoffs-job-cuts-rumor?utm_source=tldrnewsletter",
+      "duree_lecture": "2 minute read",
+      "resume_tldr": "Microsoft plans to restructure parts of its Xbox business as it looks to its next generation of consoles",
+      "contenu_brut": "Microsoft planning ‘major' Xbox layoffs next week (2 minute read)Microsoft plans to restructure parts of its Xbox business as it looks to its next generation of consoles.",
+      "date_extraction": "2025-06-26T14:58:24.397463",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Business",
+        "Mobile",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Basic facts about GPUs",
+      "url": "https://damek.github.io/random/basic-facts-about-gpus/?utm_source=tldrnewsletter",
+      "duree_lecture": "42 minute read",
+      "resume_tldr": "This article discusses how GPUs work, covering topics like compute and memory hierarchy, performance regimes, strategies for increasing performance, and more",
+      "contenu_brut": "Basic facts about GPUs (42 minute read)This article discusses how GPUs work, covering topics like compute and memory hierarchy, performance regimes, strategies for increasing performance, and more.",
+      "date_extraction": "2025-06-26T14:58:24.397463",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Dev",
+        "Tech",
+        "AI/IA"
+      ]
+    }
+  ]
+}

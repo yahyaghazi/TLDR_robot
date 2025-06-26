@@ -1,0 +1,183 @@
+{
+  "date": "2025-06-27",
+  "date_formatted": "2025-06-27",
+  "day_name": "Friday",
+  "articles_extracted": 15,
+  "articles_stored": 0,
+  "synthesis": "🔍 TENDANCES (2-3 points):\n\n1. L'intelligence artificielle est devenue un élément central dans la conception et le développement d'applications, avec des chatbots tels que Claude AI de Anthropic permettant aux utilisateurs de créer des applications directement.\n2. Les assistants vocaux personnalisés sont en pleine expansion, avec ElevenLabs lançant son propre assistant basé sur l'IA.\n\n📊 INSIGHTS (1 paragraphe):\n\nCes tendances montrent que l'intelligence artificielle est devenue un élément central dans le développement d'applications et de services, offrant des possibilités inédites pour les utilisateurs finaux. Les chatbots tels que Claude AI permettent aux développeurs de créer des applications plus rapidement et avec une meilleure compréhension des besoins des clients. De même, les assistants vocaux personnalisés tels que celui d'ElevenLabs offrent un moyen efficace pour les utilisateurs de communiquer avec leurs appareils et accéder à l'information.\n\n💡 ACTIONS (2 recommandations):\n\n1. Intégrez l'intelligence artificielle dans vot",
+  "audio_file": "C:\\Users\\yahya\\TLDR_robot\\data\\audio_summaries\\tldr_tech_2025-06-27.wav",
+  "json_file": null,
+  "errors": [],
+  "processing_time": 0,
+  "success": false,
+  "articles": [
+    {
+      "titre": "Anthropic now lets you make apps right from its Claude AI chatbot",
+      "url": "https://www.theverge.com/news/693342/anthropic-claude-ai-apps-artifact?utm_source=tldrnewsletter",
+      "duree_lecture": "2 minute read",
+      "resume_tldr": "Anthropic has added a new feature to its Claude AI chatbot that lets users build AI-powered apps right inside the app",
+      "contenu_brut": "Jun 26|TechAnthropic now lets you make apps right from its Claude AI chatbot (2 minute read)Anthropic has added a new feature to its Claude AI chatbot that lets users build AI-powered apps right inside the app. It builds on Anthropic's Artifacts feature, which lets users see and interact with what they ask Claude to make. The feature has been used to build things like AI-powered games, learning tools, data analysis apps, writing assistants, and agent workflows. A video demo showing how the featu",
+      "date_extraction": "2025-06-26T15:00:54.227472",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "ElevenLabs Releases Personal AI Voice Assistant",
+      "url": "https://elevenlabs.io/blog/introducing-11ai?utm_source=tldrai",
+      "duree_lecture": "5 minute read",
+      "resume_tldr": "ai is a low-latency voice assistant that uses MCP integrations with Perplexity, Linear, Slack, and Notion to execute multi-step workflows",
+      "contenu_brut": "Jun 25|AIElevenLabs Releases Personal AI Voice Assistant (5 minute read)11.ai is a low-latency voice assistant that uses MCP integrations with Perplexity, Linear, Slack, and Notion to execute multi-step workflows.Subscribe",
+      "date_extraction": "2025-06-26T15:00:54.227472",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Product",
+        "Design"
+      ]
+    },
+    {
+      "titre": "Begun, the AI Browser Wars Have",
+      "url": "https://spyglass.org/ai-browser-wars/?utm_source=tldrnewsletter",
+      "duree_lecture": "13 minute read",
+      "resume_tldr": "",
+      "contenu_brut": "Jun 26|TechBegun, the AI Browser Wars Have (13 minute read)",
+      "date_extraction": "2025-06-26T15:00:54.227472",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Spanish mathematician Javier Gómez Serrano and Google DeepMind team up to solve the Navier-Stokes million-dollar problem",
+      "url": "https://english.elpais.com/science-tech/2025-06-24/spanish-mathematician-javier-gomez-serrano-and-google-deepmind-team-up-to-solve-the-navier-stokes-million-dollar-problem.html?utm_source=tldrnewsletter",
+      "duree_lecture": "6 minute read",
+      "resume_tldr": "",
+      "contenu_brut": "Jun 26|TechSpanish mathematician Javier Gómez Serrano and Google DeepMind team up to solve the Navier-Stokes million-dollar problem (6 minute read)",
+      "date_extraction": "2025-06-26T15:00:54.227472",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Gemini CLI (GitHub Repo)",
+      "url": "https://github.com/google-gemini/gemini-cli?utm_source=tldrnewsletter",
+      "duree_lecture": "",
+      "resume_tldr": "",
+      "contenu_brut": "Jun 26|TechGemini CLI (GitHub Repo)",
+      "date_extraction": "2025-06-26T15:00:54.227472",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Dev",
+        "Product"
+      ]
+    },
+    {
+      "titre": "Containers are available in public beta for simple, global, and programmable compute",
+      "url": "https://blog.cloudflare.com/containers-are-available-in-public-beta-for-simple-global-and-programmable/?utm_campaign=cf_blog&amp;utm_content=20250624&amp;utm_medium=organic_social&amp;utm_source=twitter/",
+      "duree_lecture": "6 minute read",
+      "resume_tldr": "",
+      "contenu_brut": "Jun 26|TechContainers are available in public beta for simple, global, and programmable compute (6 minute read)",
+      "date_extraction": "2025-06-26T15:00:54.227472",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Web3"
+      ]
+    },
+    {
+      "titre": "Rack-scale networks are the new hotness for massive AI training and inference workloads",
+      "url": "https://www.theregister.com/2025/06/25/rack_scale_networking/?utm_source=tldrnewsletter",
+      "duree_lecture": "13 minute read",
+      "resume_tldr": "",
+      "contenu_brut": "Jun 26|TechRack-scale networks are the new hotness for massive AI training and inference workloads (13 minute read)",
+      "date_extraction": "2025-06-26T15:00:54.227472",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Infrastructure"
+      ]
+    },
+    {
+      "titre": "Muratis Startup Bets on RL for Business After Raising 2 Bn",
+      "url": "https://analyticsindiamag.com/ai-news-updates/muratis-startup-bets-on-rl-for-business-after-raising-2-bn/?utm_source=tldrnewsletter",
+      "duree_lecture": "3 minute read",
+      "resume_tldr": "",
+      "contenu_brut": "Jun 26|TechMurati's Startup Bets on ‘RL for Business' After Raising $2 Bn (3 minute read)",
+      "date_extraction": "2025-06-26T15:00:54.228022",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Business",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Some ideas for what comes next",
+      "url": "https://www.interconnects.ai/p/summertime-outlook-o3s-novelty-coming?utm_source=tldrnewsletter",
+      "duree_lecture": "9 minute read",
+      "resume_tldr": "",
+      "contenu_brut": "Jun 25|TechSome ideas for what comes next (9 minute read)",
+      "date_extraction": "2025-06-26T15:00:54.228022",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Worlds largest camera shows galaxy in 3,200 megapixel glory as Rubin telescope goes online",
+      "url": "https://www.theregister.com/2025/06/24/vera_galaxy_camera/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "",
+      "contenu_brut": "Jun 25|TechWorld's largest camera shows galaxy in 3,200 megapixel glory as Rubin telescope goes online (4 minute read)",
+      "date_extraction": "2025-06-26T15:00:54.228022",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Data"
+      ]
+    },
+    {
+      "titre": "The résumé is dying, and AI is holding the smoking gun",
+      "url": "https://arstechnica.com/ai/2025/06/the-resume-is-dying-and-ai-is-holding-the-smoking-gun/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "",
+      "contenu_brut": "Jun 25|TechThe résumé is dying, and AI is holding the smoking gun (4 minute read)",
+      "date_extraction": "2025-06-26T15:00:54.228022",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "A primer on the current state of longevity research",
+      "url": "https://www.theseedsofscience.pub/p/a-primer-on-the-current-state-of?utm_source=tldrnewsletter",
+      "duree_lecture": "24 minute read",
+      "resume_tldr": "",
+      "contenu_brut": "Jun 24|TechA primer on the current state of longevity research (24 minute read)",
+      "date_extraction": "2025-06-26T15:00:54.228022",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Science"
+      ]
+    }
+  ]
+}

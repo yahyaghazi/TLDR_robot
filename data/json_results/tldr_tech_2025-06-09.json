@@ -1,0 +1,190 @@
+{
+  "date": "2025-06-09",
+  "date_formatted": "2025-06-09",
+  "day_name": "Monday",
+  "articles_extracted": 13,
+  "articles_stored": 0,
+  "synthesis": "🔍 TENDANCES (2-3 points) :\n\n- Les conférences mondiales de développement pour les entreprises Apple et Microsoft sont en pleine évolution, avec un accent sur la conception et la productivité.\n- Des avancées significatives ont été réalisées dans le traitement de l'HIV, mettant en lumière les progrès continuels dans le domaine de la santé et des sciences.\n- Les technologies Web3 et de jeu vidéo sont en pleine expansion, offrant de nouvelles opportunités pour les développeurs et les joueurs.\n\n📊 INSIGHTS (1 paragraphe) :\n\nCes tendances révèlent une augmentation significative des investissements dans la recherche et le développement, ainsi que dans l'innovation technologique. Les entreprises sont de plus en plus déterminées à améliorer les expériences utilisateurs tout en offrant des solutions plus performantes et écologiques. De plus, ces tendances mettent en évidence la croissance du secteur éducatif dans l'adoption d'IA pour faciliter l'apprentissage et l'enseignement.\n\n💡 ACTIONS (2 recommandations) :\n\n-",
+  "audio_file": "C:\\Users\\yahya\\TLDR_robot\\data\\audio_summaries\\tldr_tech_2025-06-09.wav",
+  "json_file": null,
+  "errors": [],
+  "processing_time": 0,
+  "success": false,
+  "articles": [
+    {
+      "titre": "Everything Apple Plans to Show at Its iOS 26-Focused WWDC 2025 Event",
+      "url": "https://www.bloomberg.com/news/articles/2025-06-06/apple-wwdc-2025-preview-ios-26-macos-26-new-ai-features-ipados-26-redesigns?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0OTQzOTIzMCwiZXhwIjoxNzUwMDQ0MDMwLCJhcnRpY2xlSWQiOiJTWEZUS0REV1gyUFMwMCIsImJjb25uZWN0SWQiOiI2NTc1NjkyN0UwMkM0N0MwQkQ0MDNEQTJGMEUyNzIyMyJ9.aZlWc8n-NMVZ4gSXwhmPWcqj9IHqbMYmKd4pnWNbVGI&utm_source=tldrnewsletter",
+      "duree_lecture": "10 minute read",
+      "resume_tldr": "Apple's Worldwide Developers Conference will focus on design and productivity enhancements for its long-established operating system franchises. The keynote address will begin at 10 AM PT today",
+      "contenu_brut": "Everything Apple Plans to Show at Its iOS 26-Focused WWDC 2025 Event (10 minute read)Apple's Worldwide Developers Conference will focus on design and productivity enhancements for its long-established operating system franchises. The keynote address will begin at 10 AM PT today. It will introduce redesigned software interfaces for the iPhone, iPad, Mac, Apple TV, and Apple Watch, along with minor tweaks to the Vision Pro headset. Apple also plans to introduce a sweeping change to its software br",
+      "date_extraction": "2025-06-26T14:45:22.638115",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Microsoft and Asus announce two Xbox Ally handhelds with new Xbox full-screen experience",
+      "url": "https://www.theverge.com/news/682009/microsoft-asus-rog-xbox-ally-devices-new-windows-xbox-experience?utm_source=tldrnewsletter",
+      "duree_lecture": "7 minute read",
+      "resume_tldr": "Microsoft and Asus have been working together over the past year to create two new ROG Xbox Ally handhelds. The white ROG Xbox Ally ships with AMD's Ryzen Z2 A processor and the ROG Ally X adds a better AMD processor and impulse triggers",
+      "contenu_brut": "Microsoft and Asus announce two Xbox Ally handhelds with new Xbox full-screen experience (7 minute read)Microsoft and Asus have been working together over the past year to create two new ROG Xbox Ally handhelds. The white ROG Xbox Ally ships with AMD's Ryzen Z2 A processor and the ROG Ally X adds a better AMD processor and impulse triggers. The hardware specs make them very similar to Asus' existing Windows-powered handheld gaming PCs, but there are much-needed changes to the software side that ",
+      "date_extraction": "2025-06-26T14:45:22.638115",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Product",
+        "Design"
+      ]
+    },
+    {
+      "titre": "Breakthrough in search for HIV cure leaves researchers overwhelmed",
+      "url": "https://www.theguardian.com/global-development/2025/jun/05/breakthrough-in-search-for-hiv-cure-leaves-researchers-overwhelmed?utm_source=tldrnewsletter",
+      "duree_lecture": "2 minute read",
+      "resume_tldr": "Researchers have found a way to force HIV out of hiding inside human cells. HIV's ability to conceal itself within certain white blood cells has been one of the main challenges for scientists looking for a cure",
+      "contenu_brut": "Breakthrough in search for HIV cure leaves researchers ‘overwhelmed' (2 minute read)Researchers have found a way to force HIV out of hiding inside human cells. HIV's ability to conceal itself within certain white blood cells has been one of the main challenges for scientists looking for a cure. Further research is required to determine whether revealing the virus is enough to allow the body's immune system to deal with it or whether other technologies or therapies will need to be used to elimina",
+      "date_extraction": "2025-06-26T14:45:22.638115",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Health",
+        "Science",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "BYDs Five-Minute Charging Puts China in the Lead for EVs",
+      "url": "https://spectrum.ieee.org/byd-megawatt-charging?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "BYD's 1,000-kilowatt fast chargers make charging an EV as quick as a gasoline fill-up. They can supply nearly 250 miles of fresh range in five minutes. BYD designs its own cars, chargers, and batteries - this vertical integration puts the company in a unique position in terms of engineering control",
+      "contenu_brut": "BYD's Five-Minute Charging Puts China in the Lead for EVs (4 minute read)BYD's 1,000-kilowatt fast chargers make charging an EV as quick as a gasoline fill-up. They can supply nearly 250 miles of fresh range in five minutes. BYD designs its own cars, chargers, and batteries - this vertical integration puts the company in a unique position in terms of engineering control. This article discusses the technologies that enable the company's megawatt charging speeds.",
+      "date_extraction": "2025-06-26T14:45:22.638115",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Mobility",
+        "Energy"
+      ]
+    },
+    {
+      "titre": "Field Notes From Shipping Real Code With Claude",
+      "url": "https://diwank.space/field-notes-from-shipping-real-code-with-claude?utm_source=tldrnewsletter",
+      "duree_lecture": "37 minute read",
+      "resume_tldr": "This is a field guide on AI-assisted development. It explores how to genuinely achieve a 10x productivity boost, the infrastructure used at Julep to ship production code daily using Claude, and why writing your own tests remains absolutely sacred",
+      "contenu_brut": "Field Notes From Shipping Real Code With Claude (37 minute read)This is a field guide on AI-assisted development. It explores how to genuinely achieve a 10x productivity boost, the infrastructure used at Julep to ship production code daily using Claude, and why writing your own tests remains absolutely sacred. Good development practices are the difference between an AI that amplifies your capabilities and one that amplifies chaos. Research shows that teams that use rigorous practices deploy more",
+      "date_extraction": "2025-06-26T14:45:22.638115",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Dev",
+        "AI/AI"
+      ]
+    },
+    {
+      "titre": "Welcome to Campus. Heres Your ChatGPT",
+      "url": "https://www.nytimes.com/2025/06/07/technology/chatgpt-openai-colleges.html?unlocked_article_code=1.Nk8.Z6qI.moAMRJaHP7t6&smid=url-share&utm_source=tldrnewsletter",
+      "duree_lecture": "8 minute read",
+      "resume_tldr": "OpenAI is selling premium AI services to universities for faculty and student use and running marketing campaigns aimed at getting students to use ChatGPT",
+      "contenu_brut": "Welcome to Campus. Here's Your ChatGPT (8 minute read)OpenAI is selling premium AI services to universities for faculty and student use and running marketing campaigns aimed at getting students to use ChatGPT. It plans to overhaul college education by embedding its artificial intelligence tools in every facet of campus life. The company wants universities to give students AI assistants to help guide and tutor them. In its 'AI-native universities' plan, professors would provide customized AI stud",
+      "date_extraction": "2025-06-26T14:45:22.639117",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Education",
+        "Business",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "The hidden time bomb in the tax code thats fueling mass tech layoffs",
+      "url": "https://qz.com/tech-layoffs-tax-code-trump-section-174-microsoft-meta-1851783502?utm_source=tldrnewsletter",
+      "duree_lecture": "14 minute read",
+      "resume_tldr": "Section 174 of the IRS Code of 1954 guaranteed that US companies could deduct 100% of the qualified research and development spending in the year they incurred the costs",
+      "contenu_brut": "The hidden time bomb in the tax code that's fueling mass tech layoffs (14 minute read)Section 174 of the IRS Code of 1954 guaranteed that US companies could deduct 100% of the qualified research and development spending in the year they incurred the costs. This incentivized companies to develop their products in the US and fueled the rise of smartphones, cloud computing, and mobile apps. The Tax Cuts and Jobs Act passed during President Donald Trump's first term slashed the corporate tax rate fr",
+      "date_extraction": "2025-06-26T14:45:22.639117",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Business",
+        "Economy",
+        "Taxation"
+      ]
+    },
+    {
+      "titre": "Odyc.js (Website)",
+      "url": "https://odyc.dev/?utm_source=tldrnewsletter",
+      "duree_lecture": "",
+      "resume_tldr": "js is a small JavaScript library for coding video games even without programming experience",
+      "contenu_brut": "Odyc.js (Website)Odyc.js is a small JavaScript library for coding video games even without programming experience.",
+      "date_extraction": "2025-06-26T14:45:22.639117",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Web3",
+        "Game Development",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "SaaS Is Just Vendor Lock-In with Better Branding",
+      "url": "https://rwsdk.com/blog/saas-is-just-vendor-lock-in-with-better-branding?utm_source=tldrnewsletter",
+      "duree_lecture": "3 minute read",
+      "resume_tldr": "Integrating third-party services comes at a cost, not just in dollars, but in time, friction, and mental overhead",
+      "contenu_brut": "SaaS Is Just Vendor Lock-In with Better Branding (3 minute read)Integrating third-party services comes at a cost, not just in dollars, but in time, friction, and mental overhead.",
+      "date_extraction": "2025-06-26T14:45:22.639117",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "SaaS",
+        "Integration",
+        "Business"
+      ]
+    },
+    {
+      "titre": "Reverse Engineering Cursors LLM Client",
+      "url": "https://www.tensorzero.com/blog/reverse-engineering-cursors-llm-client/?utm_source=tldrnewsletter",
+      "duree_lecture": "17 minute read",
+      "resume_tldr": "This blog post demonstrates how to reverse-engineer Cursor's LLM client by setting up TensorZero as a self-hosted proxy service - this enables users to observe, analyze, and experiment with different LLM models while maintaining the full Cursor experience",
+      "contenu_brut": "Reverse Engineering Cursor's LLM Client (17 minute read)This blog post demonstrates how to reverse-engineer Cursor's LLM client by setting up TensorZero as a self-hosted proxy service - this enables users to observe, analyze, and experiment with different LLM models while maintaining the full Cursor experience.",
+      "date_extraction": "2025-06-26T14:45:22.640115",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Reverse Engineering",
+        "Security",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Meta reportedly in talks to invest billions of dollars in Scale AI",
+      "url": "https://techcrunch.com/2025/06/08/meta-reportedly-in-talks-to-invest-billions-of-dollars-in-scale-ai/?utm_source=tldrnewsletter",
+      "duree_lecture": "1 minute read",
+      "resume_tldr": "Scale AI provides data labeling services to companies to help them train their AI models",
+      "contenu_brut": "Meta reportedly in talks to invest billions of dollars in Scale AI (1 minute read)Scale AI provides data labeling services to companies to help them train their AI models.",
+      "date_extraction": "2025-06-26T14:45:22.640115",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Investment",
+        "Business",
+        "Data"
+      ]
+    },
+    {
+      "titre": "Specification Engineering",
+      "url": "https://www.joshuapurtell.com/posts/spec_eng/?utm_source=tldrnewsletter",
+      "duree_lecture": "3 minute read",
+      "resume_tldr": "Declarative engineering is fine when software is 99% Python logic and 1% AI, but software would be poorly served by that paradigm if it was 99% AI and 1% Python",
+      "contenu_brut": "Specification Engineering (3 minute read)Declarative engineering is fine when software is 99% Python logic and 1% AI, but software would be poorly served by that paradigm if it was 99% AI and 1% Python.",
+      "date_extraction": "2025-06-26T14:45:22.640115",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    }
+  ]
+}

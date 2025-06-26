@@ -1,0 +1,187 @@
+{
+  "date": "2025-06-13",
+  "date_formatted": "2025-06-13",
+  "day_name": "Friday",
+  "articles_extracted": 14,
+  "articles_stored": 0,
+  "synthesis": "🔍 TENDANCES (2-3 points) :\n- L'intelligence artificielle et les technologies de pointe sont en pleine expansion, avec des avancées significatives dans le domaine des implants rétiniens et des progrès continus dans la technologie autonome.\n- Les entreprises comme Shopify s'associent à des leaders du paiement pour offrir de nouvelles options de paiement innovantes, telles que les stablecoins.\n- Apple continue d'investir dans l'amélioration de Siri et prévoit une mise à jour majeure avec iOS 26.4.\n\n📊 INSIGHTS (1 paragraphe) :\nLes tendances technologiques actuelles indiquent que les entreprises continuent d'investir dans des technologies innovantes pour rester compétitives et répondre aux besoins évoluants de leurs clients. Les avancées en matière d'intelligence artificielle, de paiement et de mobilité autonome sont particulièrement prometteuses pour les entreprises qui veulent se distinguer dans leur domaine.\n\n💡 ACTIONS (2 recommandations) :\n- Suivez de près les avancées en matière d",
+  "audio_file": "C:\\Users\\yahya\\TLDR_robot\\data\\audio_summaries\\tldr_tech_2025-06-13.wav",
+  "json_file": null,
+  "errors": [],
+  "processing_time": 0,
+  "success": false,
+  "articles": [
+    {
+      "titre": "AMD reveals next-generation AI chips with OpenAI CEO Sam Altman",
+      "url": "https://www.cnbc.com/2025/06/12/amd-mi400-ai-chips-openai-sam-altman.html?utm_source=tldrnewsletter",
+      "duree_lecture": "8 minute read",
+      "resume_tldr": "Advanced Micro Devices (AMD) has unveiled new details about its next-generation AI chips. The Instinct MI400 series will ship next year. They can be assembled into full server racks with thousands of chips",
+      "contenu_brut": "AMD reveals next-generation AI chips with OpenAI CEO Sam Altman (8 minute read)Advanced Micro Devices (AMD) has unveiled new details about its next-generation AI chips. The Instinct MI400 series will ship next year. They can be assembled into full server racks with thousands of chips. AMD's rack-scale setup will make the chips look to users like one system, which is important for most customers who develop large language models.",
+      "date_extraction": "2025-06-26T14:50:14.370633",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Shopify partners with Coinbase and Stripe in landmark stablecoin deal",
+      "url": "https://finance.yahoo.com/news/shopify-partners-coinbase-stripe-landmark-182707374.html?utm_source=tldrnewsletter",
+      "duree_lecture": "2 minute read",
+      "resume_tldr": "Shopify is rolling out stablecoin payments to all users on its platform later this year. Merchants will be able to set up their own online marketplaces and accept payments in USDC, a stablecoin issued by Circle",
+      "contenu_brut": "Shopify partners with Coinbase and Stripe in landmark stablecoin deal (2 minute read)Shopify is rolling out stablecoin payments to all users on its platform later this year. Merchants will be able to set up their own online marketplaces and accept payments in USDC, a stablecoin issued by Circle. Access will be gradually expanded across the US and Europe before being opened up to all users. Shopify worked with Coinbase and collaborated with Stripe to develop new payment protocols and integrate st",
+      "date_extraction": "2025-06-26T14:50:14.370633",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Product",
+        "Design"
+      ]
+    },
+    {
+      "titre": "Experimental retina implants give mice infrared vision",
+      "url": "https://arstechnica.com/science/2025/06/experimental-retina-implants-give-mice-infrared-vision/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "Chinese scientists recently built prototype retinal implants that can replace failing photoreceptors and potentially provide infrared vision as a bonus",
+      "contenu_brut": "Experimental retina implants give mice infrared vision (4 minute read)Chinese scientists recently built prototype retinal implants that can replace failing photoreceptors and potentially provide infrared vision as a bonus. They work without an external camera or power source. The implants have been tested in mice and non-human primates - results in mice seemed promising, with the blind mice in the study responding to light and seemingly being able to see near-infrared wavelengths as well. The im",
+      "date_extraction": "2025-06-26T14:50:14.370633",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Science"
+      ]
+    },
+    {
+      "titre": "Bioengineered tooth grows in place to look and feel like the real thing",
+      "url": "https://newatlas.com/medical-devices/tooth-implant-innovation/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "Researchers have developed an artificial tooth implant that 'grows' into the gums and fuses with existing nerves to mimic the form and function of a real tooth",
+      "contenu_brut": "Bioengineered tooth \"grows\" in place to look and feel like the real thing (4 minute read)Researchers have developed an artificial tooth implant that 'grows' into the gums and fuses with existing nerves to mimic the form and function of a real tooth. They can be put in place without any bone drilling. The artificial tooth features a biodegradable outer layer that contains stem cells and specific proteins that trigger the cells to mature into nerve tissue. This allows the implant to 'talk' to the ",
+      "date_extraction": "2025-06-26T14:50:14.370633",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Health",
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Agentic Coding Recommendations",
+      "url": "https://lucumr.pocoo.org/2025/6/12/agentic-coding/?utm_source=tldrnewsletter",
+      "duree_lecture": "15 minute read",
+      "resume_tldr": "Agentic coding is evolving rapidly. This post describes an agentic workflow - while it might be quickly outdated, it shows how integrating agents in the development processes can unlock significant productivity gains",
+      "contenu_brut": "Agentic Coding Recommendations (15 minute read)Agentic coding is evolving rapidly. This post describes an agentic workflow - while it might be quickly outdated, it shows how integrating agents in the development processes can unlock significant productivity gains. While tools and techniques will evolve, the core principles remain essential. The goal isn't just to leverage agents to write code faster, but to write better, more maintainable, and resilient code.",
+      "date_extraction": "2025-06-26T14:50:14.370633",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Dev",
+        "Agentic Coding"
+      ]
+    },
+    {
+      "titre": "Suppressions of Suppressions",
+      "url": "https://overreacted.io/suppressions-of-suppressions/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "Developers will sometimes need to suppress rules in build processes because those rules are wrong or unnecessarily strict. However, as people get used to suppressing rules, they might run into another problem - some rules are really bad to suppress as suppressing them might cause unforeseen issues",
+      "contenu_brut": "Suppressions of Suppressions (4 minute read)Developers will sometimes need to suppress rules in build processes because those rules are wrong or unnecessarily strict. However, as people get used to suppressing rules, they might run into another problem - some rules are really bad to suppress as suppressing them might cause unforeseen issues. One way to deal with suppressions is to introduce a lint rule that forbids developers from suppressing some other lint rules.",
+      "date_extraction": "2025-06-26T14:50:14.372146",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Dev",
+        "Suppressions"
+      ]
+    },
+    {
+      "titre": "Waymo rides cost more than Uber or Lyft and people are paying anyway",
+      "url": "https://techcrunch.com/2025/06/12/waymo-rides-cost-more-than-uber-or-lyft-and-people-are-paying-anyway/?utm_source=tldrnewsletter",
+      "duree_lecture": "5 minute read",
+      "resume_tldr": "Waymo's self-driving car rides are consistently more expensive compared to offerings from Uber and Lyft. The company's average price at peak hours is about $11 more expensive than Lyft and nearly $9",
+      "contenu_brut": "Waymo rides cost more than Uber or Lyft — and people are paying anyway (5 minute read)Waymo's self-driving car rides are consistently more expensive compared to offerings from Uber and Lyft. The company's average price at peak hours is about $11 more expensive than Lyft and nearly $9.50 pricier than Uber. The price difference shows excitement for the technology and a real preference to sometimes be in a car without a driver. Shorter trips tend to cost more than longer ones - the pricing gap shri",
+      "date_extraction": "2025-06-26T14:50:14.372146",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Business",
+        "Mobility (Mobile)"
+      ]
+    },
+    {
+      "titre": "visionOS 26 keeps pushing Apples newest platform toward the future",
+      "url": "https://sixcolors.com/post/2025/06/visionos-26-keeps-pushing-apples-newest-platform-toward-the-future/?utm_source=tldrnewsletter",
+      "duree_lecture": "7 minute read",
+      "resume_tldr": "Several substantial feature improvements have rolled out to visionOS since its launch. This article looks at these feature improvements and what it is like to use them",
+      "contenu_brut": "visionOS 26 keeps pushing Apple's newest platform toward the future (7 minute read)Several substantial feature improvements have rolled out to visionOS since its launch. This article looks at these feature improvements and what it is like to use them. visionOS 26 continues to push toward the future of wearable devices, with improved Personas, geographic persistence, Immersive Environments, and more. The update provides robust evidence that work on the OS remains ongoing.",
+      "date_extraction": "2025-06-26T14:50:14.372146",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "visionOS"
+      ]
+    },
+    {
+      "titre": "Apple Targets Spring 2026 for Release of Delayed Siri AI Upgrade",
+      "url": "https://www.bloomberg.com/news/articles/2025-06-12/apple-targets-spring-2026-for-release-of-delayed-siri-ai-upgrade?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc0OTc4MTUzOSwiZXhwIjoxNzUwMzg2MzM5LCJhcnRpY2xlSWQiOiJTWFA5SFhEV1gyUFMwMCIsImJjb25uZWN0SWQiOiI2NTc1NjkyN0UwMkM0N0MwQkQ0MDNEQTJGMEUyNzIyMyJ9.R9mBVP8tCzRqzb94wVeZ06SuBtiLgpsTpS7P4_3YyJg&amp;utm_source=tldrnewsletter",
+      "duree_lecture": "5 minute read",
+      "resume_tldr": "Apple plans to bring the revamped Siri to iOS as part of the iOS 26. 4 software update - Apple's '. 4' updates are typically released in March",
+      "contenu_brut": "Apple Targets Spring 2026 for Release of Delayed Siri AI Upgrade (5 minute read)Apple plans to bring the revamped Siri to iOS as part of the iOS 26.4 software update - Apple's '.4' updates are typically released in March.",
+      "date_extraction": "2025-06-26T14:50:14.372146",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Apple",
+        "AI/IA (Siri)"
+      ]
+    },
+    {
+      "titre": "AOSP isnt dead, but Google just landed a huge blow to custom ROM developers",
+      "url": "https://www.androidauthority.com/google-not-killing-aosp-3566882/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "Google has made it harder to build custom Android ROMs for Pixel phones by omitting device trees and driver binaries from the latest AOSP release",
+      "contenu_brut": "AOSP isn't dead, but Google just landed a huge blow to custom ROM developers (4 minute read)Google has made it harder to build custom Android ROMs for Pixel phones by omitting device trees and driver binaries from the latest AOSP release.",
+      "date_extraction": "2025-06-26T14:50:14.373160",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Security",
+        "Mobile (Custom ROMs)"
+      ]
+    },
+    {
+      "titre": "macOS Tahoe brings a new disk image format",
+      "url": "https://eclecticlight.co/2025/06/12/macos-tahoe-brings-a-new-disk-image-format/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "ASIF allows Apple silicon Macs to achieve near-native speeds",
+      "contenu_brut": "macOS Tahoe brings a new disk image format (4 minute read)ASIF allows Apple silicon Macs to achieve near-native speeds.",
+      "date_extraction": "2025-06-26T14:50:14.373160",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "macOS",
+        "Storage"
+      ]
+    },
+    {
+      "titre": "Tape, glass, and molecules the future of archival storage",
+      "url": "https://www.theregister.com/2025/06/12/archival_storage_feature/?utm_source=tldrnewsletter",
+      "duree_lecture": "12 minute read",
+      "resume_tldr": "DNA and other molecular technologies are still a distant prospect",
+      "contenu_brut": "Tape, glass, and molecules – the future of archival storage (12 minute read)DNA and other molecular technologies are still a distant prospect.",
+      "date_extraction": "2025-06-26T14:50:14.373160",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Data",
+        "Archival Storage"
+      ]
+    }
+  ]
+}

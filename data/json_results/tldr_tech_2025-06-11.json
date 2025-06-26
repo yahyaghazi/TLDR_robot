@@ -1,0 +1,185 @@
+{
+  "date": "2025-06-11",
+  "date_formatted": "2025-06-11",
+  "day_name": "Wednesday",
+  "articles_extracted": 13,
+  "articles_stored": 0,
+  "synthesis": "🔍 TENDANCES :\n\n- Les investissements dans l'IA augmentent, avec Meta qui prévoit d'investir 14 milliards de dollars dans Scale AI.\n- Les entreprises continuent à développer des technologies d'AR, comme Snap avec ses lunettes AR.\n\n📊 INSIGHTS :\n\nL'industrie technologique se dirige vers une augmentation significative de l'intégration de l'IA et des réalités virtuelles et augmentées dans leurs produits et services. Cela démontre que ces technologies sont devenues essentielles pour rester compétitives sur le marché.\n\n💡 ACTIONS :\n\n1. Les entreprises devraient examiner comment l'intégration de l'IA et des réalités virtuelles et augmentées peuvent leur apporter un avantage compétitif.\n2. Il est également important pour les organisations de suivre les tendances et les avancées technologiques pour s'assurer qu'elles restent à jour et compétitives sur le marché.",
+  "audio_file": "C:\\Users\\yahya\\TLDR_robot\\data\\audio_summaries\\tldr_tech_2025-06-11.wav",
+  "json_file": null,
+  "errors": [],
+  "processing_time": 0,
+  "success": false,
+  "articles": [
+    {
+      "titre": "A frustrated Zuckerberg makes his biggest AI bet as Meta nears 14 billion stake in Scale AI, hires founder Wang",
+      "url": "https://www.cnbc.com/2025/06/10/zuckerberg-makes-metas-biggest-bet-on-ai-14-billion-scale-ai-deal.html?utm_source=tldrnewsletter",
+      "duree_lecture": "6 minute read",
+      "resume_tldr": "Meta is finalizing a deal to invest $14 billion into Scale AI, a company that helps AI startups prepare data to train cutting-edge AI models. Meta is one of Scale AI's biggest customers",
+      "contenu_brut": "A frustrated Zuckerberg makes his biggest AI bet as Meta nears $14 billion stake in Scale AI, hires founder Wang (6 minute read)Meta is finalizing a deal to invest $14 billion into Scale AI, a company that helps AI startups prepare data to train cutting-edge AI models. Meta is one of Scale AI's biggest customers. The social media giant appears to be taking a similar strategy as other tech companies like Google and Microsoft which are taking large stakes in prominent leaders in AI rather than buy",
+      "date_extraction": "2025-06-26T14:47:51.728647",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "OpenAI releases o3-pro, a souped-up version of its o3 AI reasoning model",
+      "url": "https://techcrunch.com/2025/06/10/openai-releases-o3-pro-a-souped-up-version-of-its-o3-ai-reasoning-model/?utm_source=tldrnewsletter",
+      "duree_lecture": "3 minute read",
+      "resume_tldr": "OpenAI has launched o3-pro, an advanced reasoning model, to ChatGPT Pro and Team users, as well as on OpenAI's developer API. Enterprise and Edu users will get access to the model next week",
+      "contenu_brut": "OpenAI releases o3-pro, a souped-up version of its o3 AI reasoning model (3 minute read)OpenAI has launched o3-pro, an advanced reasoning model, to ChatGPT Pro and Team users, as well as on OpenAI's developer API. Enterprise and Edu users will get access to the model next week. o3-pro is priced at $20 per million input tokens and $80 per million output tokens on the API. The model has access to tools and can search the web, analyze files, reason about visual inputs, use Python, personalize its r",
+      "date_extraction": "2025-06-26T14:47:51.728647",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Product",
+        "Design"
+      ]
+    },
+    {
+      "titre": "Snap to launch smaller, lighter augmented reality Specs smartglasses in 2026",
+      "url": "https://www.cnbc.com/2025/06/10/snap-specs-smart-glasses-ar.html?utm_source=tldrnewsletter",
+      "duree_lecture": "2 minute read",
+      "resume_tldr": "Snap plans to release a sixth generation of its augmented reality glasses in 2026. The next-generation glasses will be called Specs and use AR technology to let people see and interact with digital imagery overlaid over the physical world",
+      "contenu_brut": "Snap to launch smaller, lighter augmented reality Specs smartglasses in 2026 (2 minute read)Snap plans to release a sixth generation of its augmented reality glasses in 2026. The next-generation glasses will be called Specs and use AR technology to let people see and interact with digital imagery overlaid over the physical world. It will run on Snap OS. Developers will be able to incorporate Google's Gemini AI models and OpenAI's GPT family of AI models into programs they develop for the smart g",
+      "date_extraction": "2025-06-26T14:47:51.728647",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Hardware"
+      ]
+    },
+    {
+      "titre": "IBM now describing its first error-resistant quantum compute system",
+      "url": "https://arstechnica.com/science/2025/06/ibm-is-now-detailing-what-its-first-quantum-compute-system-will-look-like/?utm_source=tldrnewsletter",
+      "duree_lecture": "8 minute read",
+      "resume_tldr": "IBM has released plans for a quantum compute system that can perform 100 million operations without errors on a collection of 200 logical qubits. The hardware, which will be called Starling, will be available for use in 2029",
+      "contenu_brut": "IBM now describing its first error-resistant quantum compute system (8 minute read)IBM has released plans for a quantum compute system that can perform 100 million operations without errors on a collection of 200 logical qubits. The hardware, which will be called Starling, will be available for use in 2029. While the system will be able to handle some problems, it will not be enough to perform the complex algorithms needed to do things like break encryptions - that would require waiting for IBM'",
+      "date_extraction": "2025-06-26T14:47:51.729646",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Paws-on-MCP (GitHub Repo)",
+      "url": "https://github.com/hemanth/paws-on-mcp?utm_source=tldrnewsletter",
+      "duree_lecture": "",
+      "resume_tldr": "Paws-on-MCP is a comprehensive Model Context Protocol (MCP) server that implements the latest specification. It demonstrates production-ready adherence to the MCP 2025-03-26 specification",
+      "contenu_brut": "Paws-on-MCP (GitHub Repo)Paws-on-MCP is a comprehensive Model Context Protocol (MCP) server that implements the latest specification. It demonstrates production-ready adherence to the MCP 2025-03-26 specification. Paws-on-MCP features HackerNews and GitHub API integrations with AI-powered analysis through advanced MCP sampling.",
+      "date_extraction": "2025-06-26T14:47:51.729646",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Dev",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Android 16 is here",
+      "url": "https://android-developers.googleblog.com/2025/06/android-16-is-here.html?utm_source=tldrnewsletter",
+      "duree_lecture": "15 minute read",
+      "resume_tldr": "Android 16 is now available on most supported Pixel devices. This release will be the only release in 2025 to include planned app-impacting behavior changes",
+      "contenu_brut": "Android 16 is here (15 minute read)Android 16 is now available on most supported Pixel devices. This release will be the only release in 2025 to include planned app-impacting behavior changes. There is another planned release for Q4 that will include new developer APIs, feature updates, optimizations, and bug fixes. The Android team plans to release updates quarterly. This post details some of the changes in Android 16, including changes to improve the consistency and visual appearance of apps, ",
+      "date_extraction": "2025-06-26T14:47:51.729646",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Mobile"
+      ]
+    },
+    {
+      "titre": "Google offers buyouts to employees across the company, including Search",
+      "url": "https://www.cnbc.com/2025/06/10/google-buyouts-search-ads-unit.html?utm_source=tldrnewsletter",
+      "duree_lecture": "5 minute read",
+      "resume_tldr": "Google has offered buyouts to employees across several of its divisions in an effort to reduce headcount. The 'voluntary exit program' applies to US-based employees",
+      "contenu_brut": "Google offers buyouts to employees across the company, including Search (5 minute read)Google has offered buyouts to employees across several of its divisions in an effort to reduce headcount. The 'voluntary exit program' applies to US-based employees. The buyout announcement comes along with a demand for employees to return to the office - workers who live within 50 miles of an office will be expected to assume a hybrid work schedule. Google has done multiple buyout offers in a few units this y",
+      "date_extraction": "2025-06-26T14:47:51.729646",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Business",
+        "HR"
+      ]
+    },
+    {
+      "titre": "Reflections from Sam Altman",
+      "url": "https://blog.samaltman.com/reflections?utm_source=tldrnewsletter",
+      "duree_lecture": "8 minute read",
+      "resume_tldr": "OpenAI started almost nine years ago with the goal of building the most impactful technology in human history: artificial general intelligence (AGI). The launch of ChatGPT on November 30, 2022, kicked off the current AI revolution",
+      "contenu_brut": "Reflections from Sam Altman (8 minute read)OpenAI started almost nine years ago with the goal of building the most impactful technology in human history: artificial general intelligence (AGI). The launch of ChatGPT on November 30, 2022, kicked off the current AI revolution. Over the past two years, the company had to build almost from scratch around this new technology, which was a difficult and messy process. Sam Altman considers these years to be the most rewarding, fun, best, interesting, exh",
+      "date_extraction": "2025-06-26T14:47:51.729646",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Opinion",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "God is hungry for Context: First thoughts on o3 pro",
+      "url": "https://www.latent.space/p/o3-pro?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "OpenAI's o3-pro is very smart, but it needs a lot of context in order to work well",
+      "contenu_brut": "God is hungry for Context: First thoughts on o3 pro (4 minute read)OpenAI's o3-pro is very smart, but it needs a lot of context in order to work well.",
+      "date_extraction": "2025-06-26T14:47:51.729646",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Analysis",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Partial Keyframes",
+      "url": "https://www.joshwcomeau.com/animation/partial-keyframes/?utm_source=tldrnewsletter",
+      "duree_lecture": "9 minute read",
+      "resume_tldr": "It's possible to write CSS keyframe animations without specifying either a starting or ending point - this trick unlocks a capability within keyframe animations that makes them dynamic and composable",
+      "contenu_brut": "Partial Keyframes (9 minute read)It's possible to write CSS keyframe animations without specifying either a starting or ending point - this trick unlocks a capability within keyframe animations that makes them dynamic and composable.",
+      "date_extraction": "2025-06-26T14:47:51.730645",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Web Development",
+        "CSS"
+      ]
+    },
+    {
+      "titre": "OpenAI announces 80 price drop for o3, its most powerful reasoning model",
+      "url": "https://venturebeat.com/ai/openai-announces-80-price-drop-for-o3-its-most-powerful-reasoning-model/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "OpenAI has slashed prices on o3 by 80% for both input and output tokens, making the model more accessible for developers seeking advanced reasoning capabilities",
+      "contenu_brut": "OpenAI announces 80% price drop for o3, its most powerful reasoning model (4 minute read)OpenAI has slashed prices on o3 by 80% for both input and output tokens, making the model more accessible for developers seeking advanced reasoning capabilities.",
+      "date_extraction": "2025-06-26T14:47:51.730645",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Business",
+        "Pricing",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "News Sites Are Getting Crushed by Googles New AI Tools",
+      "url": "https://www.wsj.com/tech/ai/google-ai-news-publishers-7e687141?st=NSkAAm&reflink=desktopwebshare_permalink&utm_source=tldrnewsletter",
+      "duree_lecture": "5 minute read",
+      "resume_tldr": "Traffic for publishers is plummeting as chatbots are replacing Google searches",
+      "contenu_brut": "News Sites Are Getting Crushed by Google's New AI Tools (5 minute read)Traffic for publishers is plummeting as chatbots are replacing Google searches.",
+      "date_extraction": "2025-06-26T14:47:51.730645",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Media",
+        "SEO",
+        "AI/IA"
+      ]
+    }
+  ]
+}

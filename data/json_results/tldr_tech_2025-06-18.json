@@ -1,0 +1,184 @@
+{
+  "date": "2025-06-18",
+  "date_formatted": "2025-06-18",
+  "day_name": "Wednesday",
+  "articles_extracted": 13,
+  "articles_stored": 0,
+  "synthesis": "🔍 TENDANCES (2-3 points) :\n\n1. Les entreprises de technologie continuent d'investir dans l'intelligence artificielle (IA), comme le montrent les dernières mises à jour du modèle Gemini AI de Google et la tentative de Meta d'embaucher des talents d'OpenAI.\n2. L'espace devient un terrain d'affirmation pour les entreprises technologiques, avec Honda qui vient de lancer une fusée réutilisable et Amazon qui prévoit d'utiliser des agents intelligents pour réduire la taille de son personnel.\n3. Les stablecoins sont au cœur de l'actualité politique, le Sénat ayant récemment adopté le projet de loi GENIUS pour établir un cadre fédéral pour ces actifs cryptographiques liés à la devise américaine.\n\n📊 INSIGHTS (1 paragraphe) :\n\nCes tendances illustrent l'importance croissante de l'IA et des technologies spatiales dans le paysage technologique, ainsi que les efforts pour réguler et promouvoir la croissance du secteur Web3. L'utilisation d'agents intelligents dans divers domaines est également en train d'",
+  "audio_file": "C:\\Users\\yahya\\TLDR_robot\\data\\audio_summaries\\tldr_tech_2025-06-18.wav",
+  "json_file": null,
+  "errors": [],
+  "processing_time": 0,
+  "success": false,
+  "articles": [
+    {
+      "titre": "Googles Gemini AI family updated with stable 2.5 Pro, super-efficient 2.5 Flash-Lite",
+      "url": "https://arstechnica.com/ai/2025/06/googles-gemini-ai-family-updated-with-stable-2-5-pro-super-efficient-2-5-flash-lite/?utm_source=tldrnewsletter",
+      "duree_lecture": "3 minute read",
+      "resume_tldr": "Google has expanded its Gemini AI model family. 5 Pro has left preview and Gemini 2. 5 Pro Flash-Lite is now in preview",
+      "contenu_brut": "Google's Gemini AI family updated with stable 2.5 Pro, super-efficient 2.5 Flash-Lite (3 minute read)Google has expanded its Gemini AI model family. Gemini 2.5 Pro has left preview and Gemini 2.5 Pro Flash-Lite is now in preview. Gemini 2.5 Flash-Lite can run high-volume AI workloads without incurring significant costs. Google Flash and Flash-Lite are coming to search - custom versions of these models are now active in AI overviews and AI Mode. The Flash-Lite preview is available in Google AI St",
+      "date_extraction": "2025-06-26T14:53:22.679678",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Musks xAI Burns Through 1 Billion a Month as Costs Pile Up",
+      "url": "https://www.bloomberg.com/news/articles/2025-06-17/musk-s-xai-burning-through-1-billion-a-month-as-costs-pile-up?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc1MDIwNjEzNSwiZXhwIjoxNzUwODEwOTM1LCJhcnRpY2xlSWQiOiJTWFBKUlhUMEFGQjQwMCIsImJjb25uZWN0SWQiOiJFQTExNDNDNTM4NEE0RUY5QTg5RjJEN0IxMTg2MzcwOSJ9.RD10FZuAKDEd4Ztpon-nVr0PMFNqGV6H5RnfuXFpyuQ&amp;utm_source=tldrnewsletter",
+      "duree_lecture": "5 minute read",
+      "resume_tldr": "xAI is trying to raise $9. 3 billion in debt and equity, with plans to spend more than half of it in just the next three months. The startup is expected to burn through about $13 billion over the course of 2025",
+      "contenu_brut": "Musk's xAI Burns Through $1 Billion a Month as Costs Pile Up (5 minute read)xAI is trying to raise $9.3 billion in debt and equity, with plans to spend more than half of it in just the next three months. The startup is expected to burn through about $13 billion over the course of 2025. Its prolific fundraising efforts are just barely keeping pace with expenses. The losses are due in part to the huge costs that all AI companies face - building server farms and buying the specialized computer chip",
+      "date_extraction": "2025-06-26T14:53:22.679678",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Product",
+        "Business"
+      ]
+    },
+    {
+      "titre": "Microbe with bizarrely tiny genome may be evolving into a virus",
+      "url": "https://www.science.org/content/article/microbe-bizarrely-tiny-genome-may-be-evolving-virus?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "A newly discovered microbe known as Sukunaarchaeum isn't a virus, but it seemingly has just one purpose: to make more of itself. It appears to be a parasite that provides nothing to its hosts",
+      "contenu_brut": "Microbe with bizarrely tiny genome may be evolving into a virus (4 minute read)A newly discovered microbe known as Sukunaarchaeum isn't a virus, but it seemingly has just one purpose: to make more of itself. It appears to be a parasite that provides nothing to its hosts. Most of its genes are focused on replicating its own genome and it steals everything it needs from its host. The microbe's bizarre virus-like way of living challenges the boundaries between cellular life and viruses.",
+      "date_extraction": "2025-06-26T14:53:22.680187",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Science",
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Honda Unexpectedly Enters the Space Race With First Successful Rocket Launch",
+      "url": "https://gizmodo.com/honda-unexpectedly-enters-the-space-race-with-first-successful-rocket-launch-2000617042?utm_source=tldrnewsletter",
+      "duree_lecture": "3 minute read",
+      "resume_tldr": "Honda recently launched and landed a prototype reusable rocket. The company plans to achieve suborbital space flight by 2029. 6-foot experimental reusable launch vehicle reached an altitude of 889 feet at a test facility in northern Japan",
+      "contenu_brut": "Honda Unexpectedly Enters the Space Race With First Successful Rocket Launch (3 minute read)Honda recently launched and landed a prototype reusable rocket. The company plans to achieve suborbital space flight by 2029. The 20.6-foot experimental reusable launch vehicle reached an altitude of 889 feet at a test facility in northern Japan. Honda has yet to make a decision regarding the commercialization of its rocket technologies. The launch and landing's success sets an optimistic tone for the com",
+      "date_extraction": "2025-06-26T14:53:22.680187",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Space",
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Double-Entry Ledgers: The Missing Primitive in Modern Software",
+      "url": "https://pgrs.net/2025/06/17/double-entry-ledgers-missing-primitive-in-modern-software/?utm_source=tldrnewsletter",
+      "duree_lecture": "8 minute read",
+      "resume_tldr": "Double-entry ledger modeling is a better fit for a lot of systems compared to the ad-hoc ledger-ish things they currently use. A double-entry ledger records the current amount or balance of a thing, a historical record of how the amount got to that amount, and where that amount came from at each ste...",
+      "contenu_brut": "Double-Entry Ledgers: The Missing Primitive in Modern Software (8 minute read)Double-entry ledger modeling is a better fit for a lot of systems compared to the ad-hoc ledger-ish things they currently use. A double-entry ledger records the current amount or balance of a thing, a historical record of how the amount got to that amount, and where that amount came from at each step. Apps with ledger models built-in can have many things built on top of them without a lot of extra work or complexity. W",
+      "date_extraction": "2025-06-26T14:53:22.680619",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Software"
+      ]
+    },
+    {
+      "titre": "Sam Altman says Meta tried and failed to poach OpenAIs talent with 100M offers",
+      "url": "https://techcrunch.com/2025/06/17/sam-altman-says-meta-tried-and-failed-to-poach-openais-talent-with-100m-offers/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "Meta seems to be on a hiring spree lately to staff up its new superintelligence team. It has reportedly offered employees from OpenAI and Google DeepMind compensation packages worth upwards of $100 million",
+      "contenu_brut": "Sam Altman says Meta tried and failed to poach OpenAI's talent with $100M offers (4 minute read)Meta seems to be on a hiring spree lately to staff up its new superintelligence team. It has reportedly offered employees from OpenAI and Google DeepMind compensation packages worth upwards of $100 million. OpenAI CEO Sam Altman says that those efforts have largely been unsuccessful. Altman believes that Meta's focus on high compensation rather than a mission of delivering AGI would likely not create ",
+      "date_extraction": "2025-06-26T14:53:22.681198",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Business",
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Amazon CEO says AI agents will soon reduce companys corporate workforce",
+      "url": "https://www.cbsnews.com/news/amazon-ceo-generative-ai-corporate-workforce/?utm_source=tldrnewsletter",
+      "duree_lecture": "3 minute read",
+      "resume_tldr": "Amazon's CEO Andy Jassy issued a memo to employees on Tuesday saying that he expects the company to reduce its corporate workforce in the next few years as it leans more heavily on generative AI tools to help fulfill workplace duties",
+      "contenu_brut": "Amazon CEO says AI agents will soon reduce company's corporate workforce (3 minute read)Amazon's CEO Andy Jassy issued a memo to employees on Tuesday saying that he expects the company to reduce its corporate workforce in the next few years as it leans more heavily on generative AI tools to help fulfill workplace duties. Generative AI and agents are expected to change the way the company does its work. Amazon will need fewer people doing the same jobs done today, and more people doing other type",
+      "date_extraction": "2025-06-26T14:53:22.681198",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Business",
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Senate passes GENIUS stablecoin bill, giving crypto industry first major legislative win",
+      "url": "https://www.cnbc.com/2025/06/17/genius-stablecoin-bill-crypto.html?utm_source=tldrnewsletter",
+      "duree_lecture": "8 minute read",
+      "resume_tldr": "The GENIUS Act establishes the first federal framework for dollar-pegged stablecoins",
+      "contenu_brut": "Senate passes GENIUS stablecoin bill, giving crypto industry first major legislative win (8 minute read)The GENIUS Act establishes the first federal framework for dollar-pegged stablecoins.",
+      "date_extraction": "2025-06-26T14:53:22.682197",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Policy",
+        "Web3",
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Why Claude Code feels like magic?",
+      "url": "https://omarabid.com/claude-magic?utm_source=tldrnewsletter",
+      "duree_lecture": "3 minute read",
+      "resume_tldr": "Claude Code feels like magic because it is iterative - you just have to iterate through the whole possible space until you find one that works",
+      "contenu_brut": "Why Claude Code feels like magic? (3 minute read)Claude Code feels like magic because it is iterative - you just have to iterate through the whole possible space until you find one that works.",
+      "date_extraction": "2025-06-26T14:53:22.682197",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "Facebook announces that all videos on its platform will soon be shared as reels",
+      "url": "https://techcrunch.com/2025/06/17/facebook-announces-that-all-videos-on-its-platform-will-soon-be-shared-as-reels/?utm_source=tldrnewsletter",
+      "duree_lecture": "2 minute read",
+      "resume_tldr": "All videos on Facebook will soon be shared as reels regardless of their length or orientation",
+      "contenu_brut": "Facebook announces that all videos on its platform will soon be shared as reels (2 minute read)All videos on Facebook will soon be shared as reels regardless of their length or orientation.",
+      "date_extraction": "2025-06-26T14:53:22.682197",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Social Media",
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Programming Language Design in the Era of LLMs: A Return to Mediocrity?",
+      "url": "https://kirancodes.me/posts/log-lang-design-llms.html?utm_source=tldrnewsletter",
+      "duree_lecture": "10 minute read",
+      "resume_tldr": "The opportunity cost for using niche languages is now substantially increasing, which means language designers will be held to a higher standard to justify the use of their domain-specific languages",
+      "contenu_brut": "Programming Language Design in the Era of LLMs: A Return to Mediocrity? (10 minute read)The opportunity cost for using niche languages is now substantially increasing, which means language designers will be held to a higher standard to justify the use of their domain-specific languages.",
+      "date_extraction": "2025-06-26T14:53:22.682197",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "lstr (GitHub Repo)",
+      "url": "https://github.com/bgreenwell/lstr?utm_source=tldrnewsletter",
+      "duree_lecture": "",
+      "resume_tldr": "lstr is a blazingly fast, minimalist directory tree viewer with a powerful interactive mode",
+      "contenu_brut": "lstr (GitHub Repo)lstr is a blazingly fast, minimalist directory tree viewer with a powerful interactive mode.",
+      "date_extraction": "2025-06-26T14:53:22.683195",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Dev",
+        "Tech"
+      ]
+    }
+  ]
+}

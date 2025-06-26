@@ -1,0 +1,187 @@
+{
+  "date": "2025-06-10",
+  "date_formatted": "2025-06-10",
+  "day_name": "Tuesday",
+  "articles_extracted": 12,
+  "articles_stored": 0,
+  "synthesis": "🔍 TENDANCES (2-3 points) :\n\n- L'intelligence artificielle et les systèmes d'apprentissage automatique sont de plus en plus présents dans l'actualité technologique, avec des annonces concernant des frameworks pour développeurs et des applications diverses.\n- Les robots et la robotisation commencent à s'implanter dans notre quotidien, allant du domaine médical aux cuisines de restaurants.\n- L'utilisation de l'ultrason est en train d'évoluer pour permettre des interventions sur le système nerveux.\n\n📊 INSIGHTS (1 paragraphe) :\n\nL'intelligence artificielle et les robots sont de plus en plus présents dans notre vie quotidienne, avec des applications allant du traitement de données à la cuisine rapide. Cependant, il est important de bien comprendre l'impact de ces technologies sur nos vies et de veiller à ce que leur utilisation soit responsable et éthique.\n\n💡 ACTIONS (2 recommandations) :\n\n- Suivez de près les dernières tendances en matière d'IA et de robotique pour rester informé des progrès technologiques et des opportun",
+  "audio_file": "C:\\Users\\yahya\\TLDR_robot\\data\\audio_summaries\\tldr_tech_2025-06-10.wav",
+  "json_file": null,
+  "errors": [],
+  "processing_time": 0,
+  "success": false,
+  "articles": [
+    {
+      "titre": "Apple WWDC 2025: the 13 biggest announcements",
+      "url": "https://www.theverge.com/news/682769/apple-wwdc-2025-biggest-announcements-ios-26?utm_source=tldrnewsletter",
+      "duree_lecture": "7 minute read",
+      "resume_tldr": "Apple showed off a sleek design refresh for its operating system, new features for the iPhone, iPad, Mac, and AirPods, and more at its annual Worldwide Developer Conference keynote",
+      "contenu_brut": "Apple WWDC 2025: the 13 biggest announcements (7 minute read)Apple showed off a sleek design refresh for its operating system, new features for the iPhone, iPad, Mac, and AirPods, and more at its annual Worldwide Developer Conference keynote. This page rounds up the biggest announcements from the event. There are big changes in store across Apple's platforms. Apple's new operating systems, which are now named by year, are now available as developer betas and will be available to all users this f",
+      "date_extraction": "2025-06-26T14:46:42.102644",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "OpenAI hits 10 billion in annual recurring revenue fueled by ChatGPT growth",
+      "url": "https://www.cnbc.com/2025/06/09/openai-hits-10-billion-in-annualized-revenue-fueled-by-chatgpt-growth.html?utm_source=tldrnewsletter",
+      "duree_lecture": "2 minute read",
+      "resume_tldr": "OpenAI has hit $10 billion in annual recurring revenue (ARR). The figure includes sales from the company's consumer products, ChatGPT business products, and OpenAI's API, but excludes licensing revenue from Microsoft and large one-time deals",
+      "contenu_brut": "OpenAI hits $10 billion in annual recurring revenue fueled by ChatGPT growth (2 minute read)OpenAI has hit $10 billion in annual recurring revenue (ARR). The figure includes sales from the company's consumer products, ChatGPT business products, and OpenAI's API, but excludes licensing revenue from Microsoft and large one-time deals. OpenAI had around $5.5 billion in ARR last year - it is targeting $125 billion in revenue by 2029. The company currently supports 500 million weekly active users, wi",
+      "date_extraction": "2025-06-26T14:46:42.103647",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Product",
+        "Design"
+      ]
+    },
+    {
+      "titre": "Doctors Could Hack the Nervous System With Ultrasound",
+      "url": "https://spectrum.ieee.org/focused-ultrasound-stimulation-inflammation-diabetes?utm_source=tldrnewsletter",
+      "duree_lecture": "12 minute read",
+      "resume_tldr": "Focused ultrasound stimulation (FUS) is a technique that involves using sound waves to reduce inflammation in targeted areas of the body. It could help with many disorders, including diabetes, obesity, arthritis, heart disease, and certain cancers",
+      "contenu_brut": "Doctors Could Hack the Nervous System With Ultrasound (12 minute read)Focused ultrasound stimulation (FUS) is a technique that involves using sound waves to reduce inflammation in targeted areas of the body. It could help with many disorders, including diabetes, obesity, arthritis, heart disease, and certain cancers. The technology offers a precise and safe way to provide healing treatments for a wide range of both acute and chronic maladies - without surgery, and potentially at home with a wear",
+      "date_extraction": "2025-06-26T14:46:42.103647",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "HealthTech",
+        "AI/IA"
+      ]
+    },
+    {
+      "titre": "XRobotics countertop robots are cooking up 25,000 pizzas a month",
+      "url": "https://techcrunch.com/2025/06/09/xrobotics-countertop-robots-are-cooking-up-25000-pizzas-a-month/?utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "XRobotics' countertop robot, xPizza Cube, can make up to 100 pizzas an hour. Roughly the size of a stackable washing machine, the xPizza Cube can be retrofitted to work with pies of different sizes and styles",
+      "contenu_brut": "XRobotics' countertop robots are cooking up 25,000 pizzas a month (4 minute read)XRobotics' countertop robot, xPizza Cube, can make up to 100 pizzas an hour. Roughly the size of a stackable washing machine, the xPizza Cube can be retrofitted to work with pies of different sizes and styles. A unit can be leased for $1,300 a month for three years. XRobotics recently raised a $2.5 million seed round - it will use the capital to produce more units and install more robots for customers.",
+      "date_extraction": "2025-06-26T14:46:42.103647",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Robotics",
+        "AI/IA",
+        "FoodTech"
+      ]
+    },
+    {
+      "titre": "container (GitHub Repo)",
+      "url": "https://github.com/apple/container?utm_source=tldrnewsletter",
+      "duree_lecture": "",
+      "resume_tldr": "container is a tool for creating and running Linux containers as lightweight virtual machines on macOS. It consumes and produces OCI-compliant container images, so developers can pull and run images from any standard container registry",
+      "contenu_brut": "container (GitHub Repo)container is a tool for creating and running Linux containers as lightweight virtual machines on macOS. It consumes and produces OCI-compliant container images, so developers can pull and run images from any standard container registry. Developers can also push images to those registries, and run the images in any other OCI-compliant application. container is optimized for Apple silicon.",
+      "date_extraction": "2025-06-26T14:46:42.104648",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "DevOps",
+        "Web3"
+      ]
+    },
+    {
+      "titre": "Apple Announces Foundation Models Framework for Developers to Leverage AI",
+      "url": "https://www.macrumors.com/2025/06/09/foundation-models-framework/?utm_source=tldrnewsletter",
+      "duree_lecture": "2 minute read",
+      "resume_tldr": "Apple's Foundation Models Framework is a new API that allows third-party developers to build apps that leverage Apple's on-device large language models",
+      "contenu_brut": "Apple Announces Foundation Models Framework for Developers to Leverage AI (2 minute read)Apple's Foundation Models Framework is a new API that allows third-party developers to build apps that leverage Apple's on-device large language models. It enables developers to build AI-powered features that work offline, protect privacy, and incur no inference costs. The framework is available for testing starting today through the Apple Developer Program. A public beta will be available through the Apple ",
+      "date_extraction": "2025-06-26T14:46:42.104648",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "AI/IA",
+        "Mobile"
+      ]
+    },
+    {
+      "titre": "The SignalFire State of Talent Report - 2025",
+      "url": "https://www.signalfire.com/blog/signalfire-state-of-talent-report-2025?utm_source=tldrnewsletter",
+      "duree_lecture": "17 minute read",
+      "resume_tldr": "Tech's talent gap has widened - entry-level hiring is collapsing and geographic power centers are evolving fast",
+      "contenu_brut": "The SignalFire State of Talent Report - 2025 (17 minute read)Tech's talent gap has widened - entry-level hiring is collapsing and geographic power centers are evolving fast.",
+      "date_extraction": "2025-06-26T14:46:42.105650",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Business",
+        "HR",
+        "Data"
+      ]
+    },
+    {
+      "titre": "AIs metrics question",
+      "url": "https://www.ben-evans.com/benedictevans/2025/6/9/generative-ais-metrics-question?utm_source=tldrnewsletter",
+      "duree_lecture": "5 minute read",
+      "resume_tldr": "Measuring AI use is difficult because the term 'AI' can refer to many different things",
+      "contenu_brut": "AI's metrics question (5 minute read)Measuring AI use is difficult because the term 'AI' can refer to many different things.",
+      "date_extraction": "2025-06-26T14:46:42.105650",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "AI/IA",
+        "Data"
+      ]
+    },
+    {
+      "titre": "somo (GitHub Repo)",
+      "url": "https://github.com/theopfr/somo?utm_source=tldrnewsletter",
+      "duree_lecture": "",
+      "resume_tldr": "somo is a human-friendly alternative to netstat for socket and port monitoring on Linux",
+      "contenu_brut": "somo (GitHub Repo)somo is a human-friendly alternative to netstat for socket and port monitoring on Linux.",
+      "date_extraction": "2025-06-26T14:46:42.105650",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "DevOps",
+        "Web3"
+      ]
+    },
+    {
+      "titre": "The Code Review Frustration",
+      "url": "https://monadical.com/posts/vibe-code-how-to-stay-in-control.html?utm_source=tldrnewsletter",
+      "duree_lecture": "7 minute read",
+      "resume_tldr": "Treating vibe code as precious is a productivity killer",
+      "contenu_brut": "The Code Review Frustration (7 minute read)Treating vibe code as precious is a productivity killer.",
+      "date_extraction": "2025-06-26T14:46:42.105650",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Product",
+        "Design",
+        "Dev"
+      ]
+    },
+    {
+      "titre": "Silicon Valleys quest to remove friction from our lives",
+      "url": "https://www.strangeloopcanon.com/p/notes-on-friction?utm_source=tldrnewsletter",
+      "duree_lecture": "20 minute read",
+      "resume_tldr": "Silicon Valley's real sin is that it is removing long-existing frictions too hard and fast, causing hidden costs to pop up faster than society can patch them",
+      "contenu_brut": "Silicon Valley's quest to remove friction from our lives (20 minute read)Silicon Valley's real sin is that it is removing long-existing frictions too hard and fast, causing hidden costs to pop up faster than society can patch them.",
+      "date_extraction": "2025-06-26T14:46:42.105650",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech",
+        "Business"
+      ]
+    },
+    {
+      "titre": "A bit more on TwitterXs new encrypted messaging",
+      "url": "https://blog.cryptographyengineering.com/2025/06/09/a-bit-more-on-twitter-xs-new-encrypted-messaging/?utm_source=tldrnewsletter",
+      "duree_lecture": "24 minute read",
+      "resume_tldr": "From a cryptographic perspective, XChat, X's new end-to-end encryption messaging protocol, isn't great - there's no forward secrecy and user private keys are stored at X",
+      "contenu_brut": "A bit more on Twitter/X's new encrypted messaging (24 minute read)From a cryptographic perspective, XChat, X's new end-to-end encryption messaging protocol, isn't great - there's no forward secrecy and user private keys are stored at X.",
+      "date_extraction": "2025-06-26T14:46:42.106650",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Security",
+        "Web3"
+      ]
+    }
+  ]
+}

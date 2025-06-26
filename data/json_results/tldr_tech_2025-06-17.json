@@ -1,0 +1,171 @@
+{
+  "date": "2025-06-17",
+  "date_formatted": "2025-06-17",
+  "day_name": "Tuesday",
+  "articles_extracted": 14,
+  "articles_stored": 0,
+  "synthesis": "🔍 TENDANCES :\n\n1. Les entreprises commencent à intégrer des publicités dans leurs applications de messagerie, comme WhatsApp.\n2. L'utilisation de l'intelligence artificielle et des robots s'étend à d'autres domaines tels que la surveillance et les énergies renouvelables.\n\n📊 INSIGHTS :\n\nL'évolution technologique est en train de se poursuivre avec une forte impulsion, amenant des changements significatifs dans la manière dont nous communiquons, travaillons et utilisons les ressources. Les entreprises doivent être prêtes à s'adapter à ces tendances pour rester compétitives et tirer parti de toutes les opportunités que ces innovations peuvent offrir.\n\n💡 ACTIONS :\n\n1. Suivez de près les développements technologiques clés pour rester informé(e) des dernières tendances et opportunités d'affaires.\n2. Évaluez comment ces tendances pourraient être intégrées à votre entreprise ou activité, en fonction de vos besoins et objectifs.",
+  "audio_file": "C:\\Users\\yahya\\TLDR_robot\\data\\audio_summaries\\tldr_tech_2025-06-17.wav",
+  "json_file": null,
+  "errors": [],
+  "processing_time": 0,
+  "success": false,
+  "articles": [
+    {
+      "titre": "WhatsApp is officially getting ads",
+      "url": "https://www.theverge.com/news/687519/whatsapp-launch-advertising-status-updates?utm_source=tldrnewsletter",
+      "duree_lecture": "2 minute read",
+      "resume_tldr": "WhatsApp will now show ads from businesses through its Stories-like status feature. Ads will be tailored to users using limited information, like location, language, and followed channels",
+      "contenu_brut": "WhatsApp is officially getting ads (2 minute read)WhatsApp will now show ads from businesses through its Stories-like status feature. Ads will be tailored to users using limited information, like location, language, and followed channels. Users can change their ad preferences from Meta's Accounts Center. WhatsApp will now also start showing promoted channels when users click on the Explore button and it is rolling out the ability to subscribe to channels to receive exclusive updates.",
+      "date_extraction": "2025-06-26T14:52:07.222222",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    },
+    {
+      "titre": "OpenAI and Microsoft Tensions Are Reaching a Boiling Point",
+      "url": "https://www.wsj.com/tech/ai/openai-and-microsoft-tensions-are-reaching-a-boiling-point-4981c44f?st=Ko7232&reflink=desktopwebshare_permalink&utm_source=tldrnewsletter",
+      "duree_lecture": "4 minute read",
+      "resume_tldr": "OpenAI wants to loosen Microsoft's grip on its products and computing resources and secure approval for its conversion into a for-profit company, but negotiations have been difficult",
+      "contenu_brut": "OpenAI and Microsoft Tensions Are Reaching a Boiling Point (4 minute read)OpenAI wants to loosen Microsoft's grip on its products and computing resources and secure approval for its conversion into a for-profit company, but negotiations have been difficult. The company's executives have discussed the option of accusing Microsoft of anticompetitive behavior during their partnership - this could result in a regulatory review of the terms of the contract for potential violations of antitrust law. O",
+      "date_extraction": "2025-06-26T14:52:07.222222",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Danish military using robotic sailboats for surveillance in Baltic and North seas",
+      "url": "https://apnews.com/article/denmark-robot-sailboats-baltic-sea-bfa31c98cf7c93320115c0ad0e6908c5?utm_source=tldrnewsletter",
+      "duree_lecture": "3 minute read",
+      "resume_tldr": "Denmark's armed forces are trialing uncrewed robotic sailboats known as Voyagers. The 10-meter-long vessels carry no crew and are designed for surveillance",
+      "contenu_brut": "Danish military using robotic sailboats for surveillance in Baltic and North seas (3 minute read)Denmark's armed forces are trialing uncrewed robotic sailboats known as Voyagers. The 10-meter-long vessels carry no crew and are designed for surveillance. Powered by wind and solar energy, they can operate autonomously for months at sea. The vessels carry advanced sensors, including radar, infrared and optical cameras, and sonar. They are aimed at identifying maritime threats like damage to underse",
+      "date_extraction": "2025-06-26T14:52:07.223224",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Finland warms up the worlds largest sand battery, and the economics look appealing",
+      "url": "https://techcrunch.com/2025/06/16/finland-warms-up-the-worlds-largest-sand-battery-and-the-economics-look-appealing/?utm_source=tldrnewsletter",
+      "duree_lecture": "3 minute read",
+      "resume_tldr": "A small town in Finland recently started using the world's largest sand-based battery. Sand batteries are a type of thermal storage system that uses sand or crushed rock to store heat, which can be later used for various things like warming buildings",
+      "contenu_brut": "Finland warms up the world's largest sand battery, and the economics look appealing (3 minute read)A small town in Finland recently started using the world's largest sand-based battery. Sand batteries are a type of thermal storage system that uses sand or crushed rock to store heat, which can be later used for various things like warming buildings. They are typically 'charged' by using electricity to heat the sand. The battery will help slash carbon emissions and help the town eliminate the cost",
+      "date_extraction": "2025-06-26T14:52:07.223224",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Coding agents have crossed a chasm",
+      "url": "https://blog.singleton.io/posts/2025-06-14-coding-agents-cross-a-chasm/?utm_source=tldrnewsletter",
+      "duree_lecture": "13 minute read",
+      "resume_tldr": "Over the past few months, autonomous AI coding agents have gone from a neat curiosity to something some developers can't imagine working without. The technology has moved from a 'smarter autocomplete' to something you can genuinely delegate tasks to",
+      "contenu_brut": "Coding agents have crossed a chasm (13 minute read)Over the past few months, autonomous AI coding agents have gone from a neat curiosity to something some developers can't imagine working without. The technology has moved from a 'smarter autocomplete' to something you can genuinely delegate tasks to. These new tools can be incredible force multipliers, especially when users have enough knowledge to be good editors. However, they can be dangerous accelerants for confusion when users are out of th",
+      "date_extraction": "2025-06-26T14:52:07.223224",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Canine (GitHub Repo)",
+      "url": "https://github.com/czhu12/canine?utm_source=tldrnewsletter",
+      "duree_lecture": "",
+      "resume_tldr": "Canine is a deployment platform for Kubernetes clusters. It makes it easy to deploy and manage applications. A modern alternative to Heroku, Canine makes cheap hosting providers as easy to use as expensive ones",
+      "contenu_brut": "Canine (GitHub Repo)Canine is a deployment platform for Kubernetes clusters. It makes it easy to deploy and manage applications. A modern alternative to Heroku, Canine makes cheap hosting providers as easy to use as expensive ones. Canine has everything needed to deploy an app, including GitHub integration, one-click deployments and rollbacks, SSL certificate management, and easy autoscaling.",
+      "date_extraction": "2025-06-26T14:52:07.224221",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Meta and Oakley tease a smart glasses announcement for June 20",
+      "url": "https://www.engadget.com/wearables/meta-and-oakley-tease-a-smart-glasses-announcement-for-june-20-172532944.html?utm_source=tldrnewsletter",
+      "duree_lecture": "1 minute read",
+      "resume_tldr": "A new Instagram account called @oakleymeta has teased a video announcement for this Friday, with Instagram's own official account and Mark Zuckerberg sharing the post on their stories",
+      "contenu_brut": "Meta and Oakley tease a smart glasses announcement for June 20 (1 minute read)A new Instagram account called @oakleymeta has teased a video announcement for this Friday, with Instagram's own official account and Mark Zuckerberg sharing the post on their stories. Meta's web store has a banner saying 'The next evolution arrives June 20' and an option to sign up for updates on products, news, and innovations. This all indicates that Oakley Meta glasses will likely be announced this week. The video ",
+      "date_extraction": "2025-06-26T14:52:07.224221",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Scale AIs Wang Brings to Meta Knowledge of What Everyone Else is Doing",
+      "url": "https://www.bloomberg.com/news/articles/2025-06-16/scale-ai-s-alexandr-wang-brings-meta-his-extensive-competitor-knowledge?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc1MDEyNjYyMSwiZXhwIjoxNzUwNzMxNDIxLCJhcnRpY2xlSWQiOiJTWFlMOTJEV1JHRzAwMCIsImJjb25uZWN0SWQiOiI2NTc1NjkyN0UwMkM0N0MwQkQ0MDNEQTJGMEUyNzIyMyJ9.dA6h8Mc149rBu0n9OIhGVkB5M82dXFzOYEqucf-9Ipw&amp;utm_source=tldrnewsletter",
+      "duree_lecture": "12 minute read",
+      "resume_tldr": "Alexandr Wang co-founded Scale AI, which recently received a $14. 3 billion investment from Meta, at 19. Wang is known for his ability to cultivate influential relationships and to know what's going on in the AI industry",
+      "contenu_brut": "Scale AI's Wang Brings to Meta Knowledge of What Everyone Else is Doing (12 minute read)Alexandr Wang co-founded Scale AI, which recently received a $14.3 billion investment from Meta, at 19. Wang is known for his ability to cultivate influential relationships and to know what's going on in the AI industry. He has a direct relationship with a dizzying amount of people, in both junior and senior roles, and knows what they're working on and what they want to be doing. Meta's recent investment mean",
+      "date_extraction": "2025-06-26T14:52:07.224221",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Snorting the AGI with Claude Code",
+      "url": "https://kadekillary.work/blog/#2025-06-16-snorting-the-agi-with-claude-code",
+      "duree_lecture": "15 minute read",
+      "resume_tldr": "Claude Code has a lot of untapped potential, and with the release of the new Python SDK, more weirder use cases are about to emerge",
+      "contenu_brut": "Snorting the AGI with Claude Code (15 minute read)Claude Code has a lot of untapped potential, and with the release of the new Python SDK, more weirder use cases are about to emerge.",
+      "date_extraction": "2025-06-26T14:52:07.225222",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Why Generative AI Coding Tools and Agents Do Not Work For Me",
+      "url": "https://blog.miguelgrinberg.com/post/why-generative-ai-coding-tools-and-agents-do-not-work-for-me?utm_source=tldrnewsletter",
+      "duree_lecture": "5 minute read",
+      "resume_tldr": "People who claim that AI makes them faster or more productive are making a conscious decision to relax their quality standards or they personally benefit from selling AI",
+      "contenu_brut": "Why Generative AI Coding Tools and Agents Do Not Work For Me (5 minute read)People who claim that AI makes them faster or more productive are making a conscious decision to relax their quality standards or they personally benefit from selling AI.",
+      "date_extraction": "2025-06-26T14:52:07.225222",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    },
+    {
+      "titre": "The State of Engineering Leadership in 2025",
+      "url": "https://newsletter.eng-leadership.com/p/the-state-of-engineering-leadership?utm_source=tldrnewsletter",
+      "duree_lecture": "10 minute read",
+      "resume_tldr": "60% of engineering leaders believe that AI has not significantly boosted their team's productivity, 50% worry there are fewer jobs available, and 40% believe their team is less motivated to come to work than they were 12 months ago",
+      "contenu_brut": "The State of Engineering Leadership in 2025 (10 minute read)60% of engineering leaders believe that AI has not significantly boosted their team's productivity, 50% worry there are fewer jobs available, and 40% believe their team is less motivated to come to work than they were 12 months ago.",
+      "date_extraction": "2025-06-26T14:52:07.225222",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    },
+    {
+      "titre": "Choosing where to spend my teams effort",
+      "url": "https://frederickvanbrabant.com/blog/2025-06-13-choosing-where-to-spend-my-teams-effort/?utm_source=programming",
+      "duree_lecture": "5 minute read",
+      "resume_tldr": "Take a strategy and start linking broad actions that could be taken to handle that strategy - make these more specific, and eventually you'll find a real project that you can pitch to higher-ups",
+      "contenu_brut": "Choosing where to spend my team's effort (5 minute read)Take a strategy and start linking broad actions that could be taken to handle that strategy - make these more specific, and eventually you'll find a real project that you can pitch to higher-ups.",
+      "date_extraction": "2025-06-26T14:52:07.225222",
+      "source": "TLDR-tech",
+      "newsletter_type": "tech",
+      "categories_ia": [
+        "Tech"
+      ]
+    }
+  ]
+}
