@@ -138,11 +138,8 @@ class NotionIntegrator:
             'titre': 'titre',
             'url': 'url', 
             'resume_tldr': 'resume_tldr',
-            'duree_lecture': 'duree_lecture',
             'etat': 'etat',
-            'date': 'date',
             'categories_ia': 'categories_ia',
-            'source': 'source'
         }
         
         # Ajouter la date actuelle si pas fournie
@@ -212,11 +209,8 @@ class NotionIntegrator:
             'titre': f"📊 Synthèse TLDR {synthesis_data.get('newsletter_type', 'tech')} - {synthesis_data.get('date_formatted', 'N/A')}",
             'url': '',  # Pas d'URL pour une synthèse
             'resume_tldr': synthesis_data.get('synthesis', '')[:2000],  # Limité par Notion
-            'duree_lecture': f"{synthesis_data.get('articles_extracted', 0)} articles",
             'etat': 'Synthèse',
-            'date': synthesis_data.get('date_formatted', datetime.now().strftime('%Y-%m-%d')),
             'categories_ia': ['Synthèse', 'IA-Generated'],
-            'source': f"TLDR-{synthesis_data.get('newsletter_type', 'tech')}-Synthesis"
         }
         
         return self.add_article_to_notion(synthesis_article)
@@ -244,11 +238,8 @@ class NotionIntegrator:
             'titre': f"📈 Rapport quotidien TLDR {daily_results.get('newsletter_type', 'tech')} - {daily_results.get('date_formatted', 'N/A')}",
             'url': daily_results.get('audio_file', ''),  # Chemin vers le fichier audio
             'resume_tldr': report_summary[:2000],
-            'duree_lecture': f"{daily_results.get('processing_time', 0)}s",
             'etat': 'Rapport' if daily_results.get('success', False) else 'Erreur',
-            'date': daily_results.get('date_formatted', datetime.now().strftime('%Y-%m-%d')),
             'categories_ia': ['Rapport', 'Métadonnées'],
-            'source': f"TLDR-{daily_results.get('newsletter_type', 'tech')}-Report"
         }
         
         return self.add_article_to_notion(report_article)
