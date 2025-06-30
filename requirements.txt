@@ -1,0 +1,23 @@
+# requirements-streamlit.txt
+# Dépendances pour le dashboard Streamlit avec TTS
+
+# === STREAMLIT CORE ===
+streamlit>=1.28.0
+
+# === DATA VISUALIZATION ===
+plotly>=5.17.0
+pandas>=2.0.0
+
+# === TEXT-TO-SPEECH ===
+pyttsx3>=2.90
+
+# === EXISTING TLDR REQUIREMENTS ===
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+ollama>=0.1.7
+python-dateutil>=2.8.2
+
+# === OPTIONAL ENHANCEMENTS ===
+# wordcloud>=1.9.2  # Pour les nuages de mots
+# seaborn>=0.12.0   # Pour des graphiques supplémentaires

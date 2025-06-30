@@ -1,0 +1,44 @@
+# Configuration TLDR Monthly Automation
+# Copiez ce fichier en config.yaml et adaptez vos paramètres
+
+# === NEWSLETTER SETTINGS ===
+newsletter:
+  type: "tech"  # tech, ai, crypto, marketing, design, webdev
+  max_articles: 15
+  country_code: "US"  # US, FR, DE, GB pour gestion jours fériés
+
+# === OLLAMA SETTINGS ===
+ollama:
+  model: "nous-hermes2:latest"
+  base_url: "http://localhost:11434"
+  max_articles_per_batch: 12
+
+# === NOTION INTEGRATION (optionnel) ===
+notion:
+  enabled: false
+  token: "YOUR_NOTION_TOKEN"
+  database_id: "YOUR_DATABASE_ID"
+
+# === OUTPUT DIRECTORIES ===
+output:
+  audio_dir: "./audio_summaries"
+  json_dir: "./json_results"
+  logs_dir: "./logs"
+
+# === PROCESSING SETTINGS ===
+processing:
+  delay_between_days: 3.0  # secondes entre chaque jour
+  retry_failed_days: true
+  max_retries: 2
+
+# === AUDIO SETTINGS ===
+audio:
+  voice_rate: 180
+  voice_volume: 0.9
+  include_date_in_filename: true
+
+# === LOGGING ===
+logging:
+  level: "INFO"  
+  save_to_file: true
+  max_log_size_mb: 10
